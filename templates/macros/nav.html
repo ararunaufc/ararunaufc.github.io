@@ -1,6 +1,6 @@
 {% macro top_nav(website_title, extra_items, active_item="") -%}
 <div class="header item"><a href="{{ config.base_url }}">
-    {{ website_title }}
+    {{ website_title | upper }}
   </a></div>
 
 <ul class="menu">
