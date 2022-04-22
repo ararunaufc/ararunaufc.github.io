@@ -1,0 +1,107 @@
+{% import 'macros/languages.html' as l10n -%}
+
+{% import 'macros/head.html' as macros_head -%}
+{% import 'macros/nav.html' as macros_nav -%}
+{% import 'macros/macros.html' as macros -%}
+{% import 'macros/icons.html' as icons -%}
+{% import 'macros/blog.html' as blog -%}
+{% import 'macros/publication.html' as publication -%}
+
+{% set section = load_data(path=current_path ~ "_index.md", required = false) -%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  {% set favicon = resize_image(path=config.extra.favicon, format="png", width=32, height=32) %}
+  <link rel="shortcut icon" href="{{ favicon.url }}" type="image/png">
+  <link rel="icon" href="{{ favicon.url }}" type="image/png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  {% block head -%}
+  <meta charset="utf-8">
+
+  {{ macros_head::fomanticui() }}
+
+  {% block styles -%}
+  {% endblock styles -%}
+
+
+  {% block scripts -%}
+  {% endblock scripts -%}
+
+  {% block title -%}
+  <title>{% if section -%}{{ section.title }} | {% endif %} {{ config.title }}</title>
+  {% endblock title -%}
+
+  {% endblock head -%}
+</head>
+
+<body class="ui container">
+
+  <header>
+    <!-- Top nav bar -->
+    <nav class="ui secondary pointing menu">
+      {% block nav -%}
+      {{ macros_nav::top_nav(website_title=config.title, extra_items=config.extra.menu_items) }}
+      {% endblock nav -%}
+    </nav>
+  </header>
+
+  {#
+  <!-- !FIXME Remover gambiarra da margem -->
+  #}
+  <!-- Container -->
+  <main class="ui stackable grid" style="margin-top: 1em;">
+    {%- block page_title %}
+    <header>
+      <nav class="row">
+        <div class="ui mini breadcrumb">
+          {% if section -%}
+          {{ macros_nav::section_breadcrumbs(section=section) }}
+          {% elif page -%}
+          Page
+          {{ macros_nav::page_breadcrumbs(page=page) }}
+          {%- endif %}
+        </div>
+      </nav>
+      <h1 class="row" style="margin-top: 0.1em;">
+        {%- if section -%}
+        {{ section.title }}
+        {%- elif page -%}
+        {{ page.title }}
+        {%- endif -%}
+      </h1>
+    </header>
+    {% endblock page_title -%}
+
+    {%- block page_content %}
+    <section class="row">
+      <div class="ui basic segment">
+        {%- if section -%}
+        {{ section.content | safe }}
+        {%- elif page -%}
+        {{ page.content | safe }}
+        {%- endif -%}
+      </div>
+    </section>
+    {% endblock page_content -%}
+  </main>
+
+  {% block footer -%}
+  <footer class="ui vertical footer segment" style="margin-top: 3rem;">
+    <div class="ui text center aligned container">
+      <span class="ui teal small text">Template made with <a target="_blank" href="https://getzola.org">Zola</a> and <a
+          target="_blank" href="https://fomantic-ui.com">Fomantic-UI</a>,
+        initially inspired by <a class="underline" target="_blank"
+          href="https://github.com/adfaure/kodama-theme">Kodama</a> theme.</span>
+    </div>
+  </footer>
+  {% endblock footer -%}
+
+</body>
+
+</html>

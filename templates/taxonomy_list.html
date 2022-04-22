@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}{{ config.title }} - {{ taxonomy.name }}{% endblock %}
+
+{% block content %}
+<div class="container max-w-3xl mx-auto">
+    <div class="pt-8 flex flex">
+        <h1 class="grow font-bold font-sans break-normal text-gray-900 text-3xl">{{ config.title }}</h1>
+    </div>
+    <div class="mb-8"></div>
+
+    <main class="prose prose-indigo max-w-3xl">
+        {% if terms -%}
+        <ul>
+            {% for term in terms %}
+            <li><a href="{{ term.permalink }}">{{ term.name }}</a> &mdash; <span>({{ term.pages | length }} entradas
+                    }})</span> </li>
+            {% endfor %}
+        </ul>
+        {%- else -%}
+        <span><em>Sem categorias a mostrar.</em></span>
+        {%- endif %}
+    </main>
+</div>
+{% endblock content %}

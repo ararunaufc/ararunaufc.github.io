@@ -1,0 +1,13 @@
+{% macro factory(icon, classes="") -%}
+
+{% if icon == "lattes" %}
+{% set icon_name = "address card" %}
+{% elif icon == "mail" %}
+{% set icon_name = "envelope" %}
+{% else %}
+{% set icon_name = icon %}
+{% endif %}
+
+<i class="{{ icon_name }} {{ classes }} icon"></i>
+
+{%- endmacro %}

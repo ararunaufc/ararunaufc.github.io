@@ -1,0 +1,66 @@
+{% macro render_subsection(subsection, level=1) -%}
+<section class="column" style="margin-top: 1.5em;">
+    <header>
+        <h{{level}} class="ui {{ self::header_class(level=level) }} header">
+            {{ subsection.title }}
+            {% if not subsection.extra.section_recurse and subsection.pages | length == 0 -%}
+            <div class="ui left pointing basic horizontal disabled label" title="Não existem entradas nesta categoria">
+                <i class="file alternate icon"></i>
+                0
+            </div>
+            {%- endif %}
+        </h{{level}}>
+    </header>
+    <main class="ui bulleted list">
+        {{ self::render_section_entries(section=subsection, level=level) }}
+    </main>
+</section>
+{%- endmacro %}
+
+{% macro render_section_entries(section, level) -%}
+{% if section.pages %}
+{% set section_pages = section.pages | length %}
+{% for page in section.pages | slice(end=3) %}
+{{ self::render_entry(entry=page) }}
+{% endfor %}
+<div style="margin-top: 0.5em;">
+    <a class="ui compact primary basic button" href="{{ section.permalink }}"><i class="list icon"></i>Ver
+        todas as entradas</a>
+    <div class="ui left pointing basic horizontal violet label"
+        title="Existe{{ section_pages | pluralize(plural='m') }} {{ section_pages }} entrada{{ section_pages | pluralize }} nesta categoria">
+        <i class="file alternate icon"></i>
+        {{ section_pages }}
+    </div>
+</div>
+{% endif %}
+
+{% if section.extra and section.extra.section_recurse and section.subsections %}
+{% set nextlevel = level+1 %}
+{% for subsec_path in section.subsections %}
+{% set subsection = get_section(path=subsec_path) %}
+{{ self::render_subsection(subsection=subsection, level=nextlevel) }}
+{% endfor %}
+{%- endif %}
+{%- endmacro %}
+
+{% macro render_entry(entry) -%}
+<article class="item">
+    <div class="content">
+        <header class="header"><a href="{{ entry.permalink }}">{{ entry.title
+                }}</a></header>
+        <div class="description">{{ entry.description }}</div>
+    </div>
+</article>
+{%- endmacro %}
+
+{% macro header_class(level) -%}
+{% if level == 0 %}
+huge
+{% elif level == 1 %}
+large
+{% elif level == 2 %}
+small
+{% else %}
+tiny
+{% endif %}
+{%- endmacro %}

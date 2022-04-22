@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% import 'macros/project-entries.html' as project %}
+
+{% block nav %}
+{{ macros_nav::top_nav(website_title=config.title, extra_items=config.extra.menu_items, active_item=section.title) }}
+{% endblock nav %}
+
+{% block page_content %}
+<div class="one column row">
+  <div class="text">
+    {{ section.content | safe }}
+  </div>
+  {% for subsec_path in section.subsections -%}
+  {% set subsection=get_section(path=subsec_path) %}
+  {{ project::render_subsection(subsection=subsection) }}
+  {%- endfor %}
+</div>
+{% endblock page_content %}

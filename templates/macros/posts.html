@@ -1,0 +1,20 @@
+{% macro page_in_list(page) %}
+
+<article>
+  <header>
+    <h1>
+      <a href="{{ page.permalink }}">[ {{ page.title }} ]</i></a>
+      <span class="date-post">
+        <i class="fas fa-pen"></i>{% if page.date -%}Publicada em: {{ page.date | date(format="%d/%m/%Y") }}{%- endif %}
+      </span>
+    </h1>
+  </header>
+  {% if page.summary -%}
+  <div>
+    {{ page.summary }}
+    <nav class="readmore"><a href="{{ page.permalink }}">Read more <i class="fas fa-arrow-right"></i></a></nav>
+  </div>
+  {%- endif %}
+</article>
+
+{% endmacro page_in_list %}

@@ -1,0 +1,63 @@
+{% macro top_nav(website_title, extra_items, active_item="") -%}
+<div class="header item"><a href="{{ config.base_url }}">
+    {{ website_title }}
+  </a></div>
+
+<ul class="menu">
+  {# Get the top section -#}
+  {% set top_section = get_section(path="_index.md", metadata_only=true) -%}
+
+  {# Display primary sections as menu items #}
+  {% for subsec_path in top_section.subsections -%}
+
+  {% set subsection = get_section(path=subsec_path, metadata_only=true) -%}
+  {% if not subsection.extra.hidden_nav -%}
+  <li class="{% if subsection.title==active_item -%} active {%- endif %} item">
+    <a href={{ subsection.permalink }}>
+      {{subsection.title}}
+    </a>
+  </li>
+  {% endif -%}
+  {% endfor -%}
+</ul>
+{# Extra menu items #}
+<ul class="right menu">
+  {% for item in extra_items -%}
+  <li class="{% if subsection.title==active_item -%} active {% endif -%} item">
+    <a href={{ get_url(path=item.path, trailing_slash=false) }}>
+      {{item.name}}
+    </a>
+  </li>
+  {% endfor -%}
+</ul>
+<div class="ui simple dropdown right item">
+  <i class="large language icon"></i><i class="dropdown icon"></i>
+  <ul class="menu">
+    <!-- TODO Alterar para dados dinâmicos -->
+    <li class="active item">Português (Brasileiro)</li>
+    <li class="item">English</li>
+  </ul>
+</div>
+{%- endmacro %}
+
+{% macro page_breadcrumbs(page) -%}
+{% for ancestor_path in page.ancestors %}
+{% set ancestor = get_section(path=ancestor_path) %}
+<i class="right chevron icon divider"></i>
+<a class="section" href="{{ ancestor.permalink }}">{{ ancestor.title | default(value="Início") | truncate(length=20)
+  }}</a>
+{% endfor %}
+<i class="right arrow icon divider"></i>
+<div class="active section">{{ page.title | default(value="Início") | truncate(length=50) }}</div>
+{%- endmacro %}
+
+{% macro section_breadcrumbs(section) -%}
+{% for ancestor_path in section.ancestors %}
+{% set ancestor = get_section(path=ancestor_path) %}
+<i class="right chevron icon divider"></i>
+<a class="section" href="{{ ancestor.permalink }}">{{ ancestor.title | default(value="Início") | truncate(length=20)
+  }}</a>
+{% endfor %}
+<i class="right arrow icon divider"></i>
+<div class="active section">{{ section.title | default(value="Início") | truncate(length=50) }}</div>
+{%- endmacro %}

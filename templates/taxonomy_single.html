@@ -1,0 +1,16 @@
+{% extends "base.html" -%}
+
+{% import 'macros/posts.html' as posts -%}
+
+{% block title -%}{{ config.title }} - {{ taxonomy.name }} / {{ term.name }}{%- endblock %}
+
+
+{% block content -%}
+<main>
+    <h2>{{ term.name }}</h2>
+
+    {%- for page in term.pages %}
+    {{ posts::page_in_list(page=page) }}
+    {% endfor %}
+</main>
+{%- endblock content %}

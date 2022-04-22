@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block page_title -%}
+
+{% set image_webp = resize_image(path=config.extra.avatar, format="webp", width=150, height=150) %}
+{% set image_png = resize_image(path=config.extra.avatar, format="png", width=150, height=150) %}
+{% set image_jpg = resize_image(path=config.extra.avatar, format="jpg", width=150, height=150) %}
+<header class="six wide center aligned column">
+  <img class="ui centered circular image" srcset="{{image_webp.url}}, {{image_png.url}}" src="{{image_jpg.url}}"
+    alt="Foto do Professor Arthur Araruna." />
+  <div class="ui header">
+    <h1 class="content">{{ config.title }}</h1>
+    {% if section.extra.title %}
+    <h2 class="sub header">{{ section.extra.title }}</h2>
+    {% endif %}
+  </div>
+  {#
+  <!-- ! FIXME Corrigir ícones da lista -->
+  <!--   TODO Voltar a tag de lista, por questão semântica -->
+  #}
+  <div class="ui horizontal list">
+    {% for icon in section.extra.avatar_icons %}
+    <div class="item">
+      <a href="{{ icon.link }}" title="{{ icon.title }}" target="_blank">{{ icons::factory(icon=icon.icon,classes="big
+        blue") }}</a>
+    </div>
+    {% endfor %}
+  </div>
+</header>
+
+{%- endblock page_title %}
+
+{% block page_content -%}
+
+{% block biography -%}
+<section class="ten wide column">
+  <h1>{{ config.extra.translations|get(key=lang)|get(key="biography") }}</h1>
+  <div class="row">{{ section.content | safe }}</div>
+
+  {# TODO Remover hack de margem #}
+  <div class="ui row grid" style="margin-top: 1em;">
+    <div class="eight wide column">
+      <h2>{{ config.extra.translations|get(key=lang)|get(key="interests") }}</h2>
+      <ul>
+        {% for interest in section.extra.interests %}
+        <li> {{ interest }} </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="eight wide column">
+      <h2>{{ config.extra.translations|get(key=lang)|get(key="education") }}</h2>
+      <div class="ui list">
+        {% for course in section.extra.education.courses %}
+        {#
+        <!-- ! FIXME Corrigir ícones da lista -->
+        <!--   TODO Voltar a tag de lista, por questão semântica -->
+        #}
+        <div class="item">
+          <i class="large top aligned graduation cap icon"></i>
+          <div class="content">
+            <p class="header">{{ course.course }}, {{ course.year }}</p>
+            <p class="description">
+              {{ course.institution }}
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{%- endblock biography %}
+
+{%- endblock page_content %}

@@ -1,0 +1,52 @@
+base_url = "https://araruna.science"
+
+title = "Prof. Arthur Araruna"
+description = "Informações profissionais sobre o Prof. Arthur Araruna do Campus de Quixadá da Universidade Federal do Ceará."
+
+default_language = "pt"
+
+# theme = "kodama-theme"
+compile_sass = false
+minify_html = true
+
+build_search_index = true
+generate_feed = true
+
+taxonomies = [
+    { name = "area" },
+    { name = "academic_level" },
+    { name = "grant_agency" },
+]
+
+[markdown]
+highlight_code = false
+smart_punctuation = true
+
+external_links_target_blank = true
+external_links_no_follow = true
+
+[languages.en]
+title = "Prof. Arthur Araruna"
+description = "Informations about Prof. Arthur Araruna's professional activity, from Quixadá's Campus at the Federal University of Ceará."
+
+[extra]
+# Kodama Theme configs
+email = "ararunaufc@gmail.com"
+avatar = "static/img/Eu.jpg"
+favicon = "static/img/Eu.jpg"
+
+menu_items = []
+
+[extra.translations.pt]
+lang_name = "Português (Brasileiro)"
+
+biography = "Biografia"
+interests = "Interesses"
+education = "Formação Acadêmica"
+
+[extra.translations.en]
+lang_name = "English"
+
+biography = "Biography"
+interests = "Interests"
+education = "Education"

@@ -1,0 +1,15 @@
+{% macro option_value(lang) -%}
+    {% if lang != config.default_language %}{{lang}}{% endif %}
+{%- endmacro %}
+
+{% macro test_selected(lang) -%}
+    {% if lang == config.default_language %}selected{% endif %}
+{%- endmacro %}
+
+{% macro select_language() %}
+<select id="lang_select">
+    {% for language, value in config.extra.translations %}
+    <option value="{{ self::option_value(lang=language)}}" {{ self::test_selected(lang=language)}}>{{ config.extra.translations|get(key=language)|get(key="lang_name") }}</option>
+    {% endfor %}
+</select>
+{% endmacro %}
