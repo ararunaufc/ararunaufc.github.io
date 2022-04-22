@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block nav %}
+{{ macros_nav::top_nav(website_title=config.title, extra_items=config.extra.menu_items, active_item=section.title) }}
+{% endblock nav %}
+
+{% block page_content %}
+
+<section class="one column row">
+  {% if section.content and section.content | trim | length != 0 -%}
+  <div class="ui basic column segment">
+    {{ section.content }}
+  </div>
+  {%- endif %}
+  <div class="column">
+    <nav class="ui top attached tabular menu" data-tab="true">
+      {% for category in section.extra.categories -%}
+      <button class="link item" data-tab="{{ category.id }}">{{ category.title }}</button>
+      {%- endfor %}
+    </nav>
+
+    {% for category in section.extra.categories -%}
+    <article class="ui bottom attached fluid padded tab segment" data-tab="{{ category.id }}">
+      {% if category.entries -%}
+      <ul>
+        {% for entry in category.entries -%}
+        <li>{{ entry }}</li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+
+      {% if category.children -%}
+      {% for subcat in category.children -%}
+      <section>
+        <h2>{{subcat.title}}</h2>
+        <ul>
+          {% for entry in subcat.entries -%}
+          <li>{{ entry }}</li>
+          {%- endfor %}
+        </ul>
+      </section>
+      {%- endfor %}
+      {%- endif %}
+    </article>
+    {%- endfor %}
+
+  </div>
+</section>
+
+{% endblock page_content %}
+
+{% block after_footer %}
+{{ super() }}
+<script type="text/javascript">
+  $('.tabular.menu .item')
+    .tab()
+    ;
+</script>
+{% endblock %}
