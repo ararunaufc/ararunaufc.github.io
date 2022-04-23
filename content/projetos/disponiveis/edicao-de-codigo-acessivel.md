@@ -33,7 +33,9 @@ Estudar e propor ferramentas para auxiliar a tarefa de leitura e escrita de cód
 
 ## Escopo
 
-{{ ui_message(content="O escopo definitivo do trabalho ainda não está definido.", type="warning") }}
+{% ui_message(type="warning")) %}
+O escopo definitivo do trabalho ainda não está definido.
+{% end %}
 
 - Propor ferramentas e funcionalidades para reduzir dificuldades na atuação profissional dessa população
 
@@ -41,14 +43,18 @@ Estudar e propor ferramentas para auxiliar a tarefa de leitura e escrita de cód
 
 ### Cursos desejáveis
 
-{{ ui_message(content="Os cursos a seguir são os têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.", type="info") }}
+{% ui_message(type="info")) %}
+Os cursos a seguir são os têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.
+{% end %}
 
 1. Engenharia de Software
 2. Ciência da Computação
 
 ### Disciplinas desejáveis
 
-{{ ui_message(content="As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.", type="info") }}
+{% ui_message(type="info")) %}
+As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.
+{% end %}
 
 - Estrutura de Dados Avançada
 - Compiladores

@@ -34,20 +34,26 @@ Este projeto visa estudar e avaliar as soluções já propostas para esse fim.
 
 ## Escopo
 
-{{ ui_message(content="O escopo definitivo do trabalho ainda não está definido.", type="warning") }}
+{% ui_message(type="warning")) %}
+O escopo definitivo do trabalho ainda não está definido.
+{% end %}
 
 ## Conhecimento
 
 ### Cursos desejáveis
 
-{{ ui_message(content="Os cursos a seguir são os têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.", type="info") }}
+{% ui_message(type="info")) %}
+Os cursos a seguir são os têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.
+{% end %}
 
 1. Ciência da Computação
 2. Engenharia de Software
 
 ### Disciplinas desejáveis
 
-{{ ui_message(content="As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.", type="info") }}
+{% ui_message(type="info")) %}
+As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.
+{% end %}
 
 - Estrutura de Dados Avançada
 - Projeto e Análise de Algoritmos
