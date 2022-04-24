@@ -11,11 +11,6 @@
   <div class="ui basic segment">
     {{ section.content | safe }}
   </div>
-  {#
-  <!-- {% for subsec_path in section.subsections -%}
-  {% set subsection=get_section(path=subsec_path) %}
-  {%- endfor %} -->
-  #}
   {{ project::render_section(section=section) }}
 </div>
 {% endblock page_content %}
