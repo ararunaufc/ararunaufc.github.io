@@ -5,7 +5,7 @@ date = 2019-01-24
 updated = 2022-04-21
 
 [taxonomies]
-academic_level = [ "TCC" ]
+academic_level = [ "Graduação" ]
 area = [ "Grafos", "Coloração Gulosa", "Número de Grundy" ]
 
 [extra]

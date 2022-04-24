@@ -7,7 +7,7 @@ updated = "2022-04-23"
 
 [taxonomies]
 area = [ "Compiladores", "Interação Humano-Computador" ]
-academic_level = [ "TCC" ]
+academic_level = [ "Graduação" ]
 
 [extra]
 type = "Research"

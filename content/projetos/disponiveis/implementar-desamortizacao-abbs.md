@@ -7,7 +7,7 @@ updated = "2022-04-23"
 
 [taxonomies]
 area = [ "Estruturas de Dados", "Algoritmos" ]
-academic_level = [ "TCC" ]
+academic_level = [ "Graduação" ]
 
 [extra]
 type = "Research"

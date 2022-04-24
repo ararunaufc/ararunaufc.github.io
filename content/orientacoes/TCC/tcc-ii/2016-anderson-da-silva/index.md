@@ -5,7 +5,7 @@ date = 2016-06-01
 updated = 2022-04-21
 
 [taxonomies]
-academic_level = [ "TCC" ]
+academic_level = [ "Graduação" ]
 area = [ "Teoria da Informação", "Compressão de Dados" ]
 
 [extra]

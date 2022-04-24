@@ -8,7 +8,7 @@ draft = true
 
 [taxonomies]
 area = [ "Estruturas de Dados", "Algoritmos" ] # TODO: Corrigir áreas
-academic_level = [ "TCC" ]
+academic_level = [ "Graduação" ]
 
 [extra]
 type = "Research" # TODO: Conferir melhor opção (acho que existem outras já disponíveis)
