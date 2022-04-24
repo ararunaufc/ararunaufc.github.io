@@ -8,12 +8,14 @@
 
 {% block page_content %}
 <div class="one column row">
-  <div class="text">
+  <div class="ui basic segment">
     {{ section.content | safe }}
   </div>
-  {% for subsec_path in section.subsections -%}
+  {#
+  <!-- {% for subsec_path in section.subsections -%}
   {% set subsection=get_section(path=subsec_path) %}
-  {{ project::render_subsection(subsection=subsection) }}
-  {%- endfor %}
+  {%- endfor %} -->
+  #}
+  {{ project::render_section(section=section) }}
 </div>
 {% endblock page_content %}

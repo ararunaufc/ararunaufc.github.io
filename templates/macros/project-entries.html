@@ -1,55 +1,58 @@
-{% macro render_subsection(subsection, level=1) -%}
-<section class="column" style="margin-top: 1.5em;">
-    <header>
-        <h{{level}} class="ui {{ self::header_class(level=level) }} header">
-            {{ subsection.title }}
-            {% if not subsection.extra.section_recurse and subsection.pages | length == 0 -%}
-            <div class="ui left pointing basic horizontal disabled label" title="Não existem entradas nesta categoria">
-                <i class="file alternate icon"></i>
-                0
-            </div>
-            {%- endif %}
-        </h{{level}}>
-    </header>
-    <main class="ui bulleted list">
-        {{ self::render_section_entries(section=subsection, level=level) }}
-    </main>
+{% import 'macros/messages.html' as messages %}
+
+{% macro render_section(section, level=1, is_root=true) -%}
+{% set transparent = section.extra.transparent | default(value=false) %}
+{% set transparent = section.transparent | default(value=transparent) %}
+{% if not transparent %}
+<section class="column">
+  <header style="margin: 0.5em 0;">
+    <h{{level}} class="ui {{ self::header_class(level=level) }} header">
+      <a href="{{ section.permalink }}">
+        {% if not is_root %}
+        <span title="Ver todas as entradas">{{ section.title }}</span>
+        {% endif %}
+        {% set section_pages = section.pages | length %}
+        <div
+          class="ui {% if is_root -%} bottom {%- else -%} left {%- endif %} pointing basic horizontal {% if section_pages == 0 -%} disabled {%- else -%} violet {%- endif %} label"
+          title="{{ messages::entries_in_section(count=section_pages) }} - Clique para ver toda a seção">
+          <i class="file alternate icon"></i>
+          {{ section_pages }}
+        </div>
+      </a>
+    </h{{level}}>
+  </header>
+  <main>
+    <div class="ui bulleted list">{{ self::render_section_entries(section=section) }}</div>
+
+    {{- self::render_subsections_of(section=section, level=level) }}
+  </main>
 </section>
+{% endif %}
 {%- endmacro %}
 
-{% macro render_section_entries(section, level) -%}
-{% if section.pages %}
-{% set section_pages = section.pages | length %}
+{% macro render_section_entries(section) -%}
 {% for page in section.pages | slice(end=3) %}
 {{ self::render_entry(entry=page) }}
 {% endfor %}
-<div style="margin-top: 0.5em;">
-    <a class="ui compact primary basic button" href="{{ section.permalink }}"><i class="list icon"></i>Ver
-        todas as entradas</a>
-    <div class="ui left pointing basic horizontal violet label"
-        title="Existe{{ section_pages | pluralize(plural='m') }} {{ section_pages }} entrada{{ section_pages | pluralize }} nesta categoria">
-        <i class="file alternate icon"></i>
-        {{ section_pages }}
-    </div>
-</div>
-{% endif %}
+{%- endmacro %}
 
-{% if section.extra and section.extra.section_recurse and section.subsections %}
+{% macro render_subsections_of(section, level) -%}
+{% if section.extra.summary_recurse %}
 {% set nextlevel = level+1 %}
 {% for subsec_path in section.subsections %}
 {% set subsection = get_section(path=subsec_path) %}
-{{ self::render_subsection(subsection=subsection, level=nextlevel) }}
+{{ self::render_section(section=subsection, level=nextlevel, is_root=false) }}
 {% endfor %}
 {%- endif %}
 {%- endmacro %}
 
 {% macro render_entry(entry) -%}
 <article class="item">
-    <div class="content">
-        <header class="header"><a href="{{ entry.permalink }}">{{ entry.title
-                }}</a></header>
-        <div class="description">{{ entry.description }}</div>
-    </div>
+  <div class="content">
+    <header class="header"><a href="{{ entry.permalink }}">{{ entry.title
+        }}</a></header>
+    <div class="description">{{ entry.description }}</div>
+  </div>
 </article>
 {%- endmacro %}
 

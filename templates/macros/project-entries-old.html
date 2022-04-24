@@ -1,0 +1,88 @@
+{% macro render_subsection(subsection, level=1) -%}
+<section class="column" style="margin-top: 1.5em;">
+    {# Se for transparente, não se deve gerar um novo título #}
+    {% if subsection.transparent -%}
+    {# Gera lista apenas neste nível, para que todas as entradas façam parte de uma mesma #}
+    <main class="ui bulleted list">
+        {{ self::render_transparent_subsection(subsection=subsection, level=level) }}
+    </main>
+    {%- else -%}
+    {{ self::render_opaque_subsection(subsection=subsection, level=level) }}
+    {%- endif %}
+</section>
+{%- endmacro %}
+
+{% macro render_opaque_subsection(subsection, level) -%}
+<header>
+    <h{{level}} class="ui {{ self::header_class(level=level) }} header" style="margin-bottom: 0.5em;">
+        {{ subsection.title }}
+        {% if not subsection.extra.section_recurse and subsection.pages | length == 0 -%}
+        <div class="ui left pointing basic horizontal disabled label" title="Não existem entradas nesta categoria">
+            <i class="file alternate icon"></i>
+            0
+        </div>
+        {%- endif %}
+    </h{{level}}>
+</header>
+<main class="ui bulleted list">
+    {% set section_pages = section.pages | length %}
+    <a class="ui compact primary basic button" href="{{ subsection.permalink }}"><i class="list icon"></i>Ver
+        todas as entradas</a>
+    <div class="ui left pointing basic horizontal violet label"
+        title="Existe{{ section_pages | pluralize(plural='m') }} {{ section_pages }} entrada{{ section_pages | pluralize }} nesta categoria">
+        <i class="file alternate icon"></i>
+        {{ section_pages }}
+    </div>
+    {{ self::render_section_entries(section=subsection, level=level) }}
+</main>
+{%- endmacro %}
+
+{% macro render_transparent_subsection(subsection, level) -%}
+{# TODO: Determinar se é possível acumular as quantidades de entradas #}
+{#
+<!-- *NOTE: Acho que deve ser feito no momento da recursão... --> #}
+{{ self::render_section_entries(section=subsection, level=level) }}
+{%- endmacro %}
+
+{% macro render_section_entries(section, level) -%}
+{% if section.pages %}
+{% for page in section.pages | slice(end=3) %}
+{{ self::render_entry(entry=page) }}
+{% endfor %}
+{% endif %}
+
+{% if section.extra and section.extra.section_recurse and section.subsections %}
+{% set nextlevel = level+1 %}
+{% for subsec_path in section.subsections %}
+{% set subsection = get_section(path=subsec_path) %}
+{# Se for transparente, não se deve gerar um novo título nem gerar um novo nível #}
+{% if subsection.transparent %}
+{{ self::render_section_entries(section=subsection, level=level) }}
+{% else %}
+{{ self::render_subsection(subsection=subsection, level=nextlevel) }}
+{% endif %}
+{% endfor %}
+{%- endif %}
+{%- endmacro %}
+
+{% macro render_entry(entry) -%}
+<article class="item">
+    <div class="content">
+        <header class="header"><a href="{{ entry.permalink }}">{{ entry.title
+                }}</a></header>
+        <div class="description">{{ entry.description }}</div>
+    </div>
+</article>
+{%- endmacro %}
+
+{% macro header_class(level) -%}
+{% if level == 0 %}
+huge
+{% elif level == 1 %}
+large
+{% elif level == 2 %}
+small
+{% else %}
+tiny
+{% endif %}
+{%- endmacro %}
