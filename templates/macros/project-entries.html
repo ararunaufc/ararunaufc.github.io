@@ -4,24 +4,24 @@
 {% set transparent = section.extra.transparent | default(value=false) %}
 {% set transparent = section.transparent | default(value=transparent) %}
 {% if not transparent %}
+{% set section_pages = section.pages | length %}
 <section class="column">
-  <header style="margin: 0.5em 0;">
+  {% if not is_root %}
+  <header style="margin-bottom: 1em;">
     <h{{level}} class="ui {{ self::header_class(level=level) }} header">
-      <a href="{{ section.permalink }}">
-        {% if not is_root %}
-        <span title="Ver todas as entradas">{{ section.title }}</span>
-        {% endif %}
-        {% set section_pages = section.pages | length %}
+      <a href="{{ section.permalink }}"
+        title="{{ messages::entries_in_section(count=section_pages) }} - Clique para ver toda a seção">
+        {{ section.title }}
         <div
-          class="ui {% if is_root -%} bottom {%- else -%} left {%- endif %} pointing basic horizontal {% if section_pages == 0 -%} disabled {%- else -%} violet {%- endif %} label"
-          title="{{ messages::entries_in_section(count=section_pages) }} - Clique para ver toda a seção">
+          class="ui {% if is_root -%} bottom {%- else -%} left {%- endif %} pointing basic horizontal {% if section_pages == 0 -%} disabled {%- else -%} violet {%- endif %} label">
           <i class="file alternate icon"></i>
           {{ section_pages }}
         </div>
       </a>
     </h{{level}}>
   </header>
-  <main>
+  {% endif %}
+  <main style="margin-bottom: 1em;">
     <div class="ui bulleted list">{{ self::render_section_entries(section=section) }}</div>
 
     {{- self::render_subsections_of(section=section, level=level) }}
