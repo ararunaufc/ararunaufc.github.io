@@ -8,6 +8,7 @@ updated = "2022-04-23"
 [taxonomies]
 area = [ "Estruturas de Dados", "Algoritmos" ]
 academic_level = [ "Graduação" ]
+artifact = [ "Implementação de Referência" ]
 
 [extra]
 type = "Research"
