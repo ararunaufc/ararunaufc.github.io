@@ -15,6 +15,7 @@ generate_feed = true
 taxonomies = [
     { name = "area" },
     { name = "academic_level" },
+    { name = "artifact" },
     { name = "grant_agency" },
 ]
 

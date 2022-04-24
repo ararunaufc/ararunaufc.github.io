@@ -8,6 +8,7 @@ updated = "2022-04-23"
 [taxonomies]
 area = [ "Compiladores", "Interação Humano-Computador" ]
 academic_level = [ "Graduação" ]
+artifact = [ "Implementação de Referência" ]
 
 [extra]
 type = "Research"

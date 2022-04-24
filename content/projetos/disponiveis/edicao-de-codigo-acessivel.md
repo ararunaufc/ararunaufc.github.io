@@ -10,6 +10,7 @@ updated = "2022-04-21"
 [taxonomies]
 area = [ "Compiladores", "Interação Humano-Computador", ]
 academic_level = [ "Graduação" ]
+artifact = [ "Software", "Artigo" ]
 
 [extra]
 type = "Research"

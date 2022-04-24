@@ -9,6 +9,7 @@ draft = true
 [taxonomies]
 area = [ "Linguagens de Programação", "Compiladores", "Algoritmos" ]
 academic_level = [ "Doutorado", "Mestrado" ]
+artifact = [ "Software", "Artigo" ]
 
 [extra]
 type = "Research"

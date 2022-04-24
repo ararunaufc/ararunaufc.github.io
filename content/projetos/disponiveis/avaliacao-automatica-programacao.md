@@ -9,6 +9,7 @@ draft = true
 [taxonomies]
 area = [ "Estruturas de Dados", "Algoritmos" ] # TODO: Corrigir áreas
 academic_level = [ "Graduação" ]
+artifact = [ "Software" ]
 
 [extra]
 type = "Research" # TODO: Conferir melhor opção (acho que existem outras já disponíveis)

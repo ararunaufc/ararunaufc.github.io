@@ -69,6 +69,16 @@ tiny
 {%- endmacro %}
 
 {% macro render_extra(project) -%}
+{% if project.taxonomies.grant_agency %}
+<div class="ui right pointing horizontal basic green label" data-custom-cursor="help" title="Agentes de fomento">
+  <i class="hand holding usd icon"></i>
+</div>
+<div class="ui horizontal divided list" style="margin-right: 1em;">
+  {% for grant_agency in project.taxonomies.grant_agency %}
+  <div class="item">{{ grant_agency }}</div>
+  {% endfor %}
+</div>
+{% endif %}
 {%- endmacro %}
 
 {% macro render_meta(project) -%}
@@ -84,7 +94,7 @@ tiny
 </div>
 {% endif %}
 {% if project.taxonomies.academic_level %}
-<div class="ui right pointing horizontal basic grey label" data-custom-cursor="help"
+<div class="ui right pointing horizontal basic blue label" data-custom-cursor="help"
   title="Níveis acadêmicos compatíveis">
   <i class="user graduate icon"></i>
 </div>
@@ -95,13 +105,24 @@ tiny
 </div>
 {% endif %}
 {% if project.taxonomies.area %}
-<div class="ui right pointing horizontal basic grey label" data-custom-cursor="help"
+<div class="ui right pointing horizontal basic violet label" data-custom-cursor="help"
   title="Áreas associadas ao projeto">
   <i class="book reader icon"></i>
 </div>
 <div class="ui tiny horizontal divided list" style="margin-right: 1em;">
   {% for area in project.taxonomies.area %}
   <div class="item">{{ area }}</div>
+  {% endfor %}
+</div>
+{% endif %}
+{% if project.taxonomies.artifact %}
+<div class="ui right pointing horizontal basic grey label" data-custom-cursor="help"
+  title="Artefatos gerados pelo projeto">
+  <i class="drafting compass icon"></i>
+</div>
+<div class="ui tiny horizontal divided list" style="margin-right: 1em;">
+  {% for artifact in project.taxonomies.artifact %}
+  <div class="item">{{ artifact }}</div>
   {% endfor %}
 </div>
 {% endif %}

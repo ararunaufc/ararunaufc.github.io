@@ -8,6 +8,7 @@ updated = "2022-04-23"
 [taxonomies]
 area = [ "Linguagens de Programação", "Interação Humano-Computador" ]
 academic_level = [ "Graduação" ]
+artifact = [ "Artigo" ]
 
 [extra]
 type = "Research"
