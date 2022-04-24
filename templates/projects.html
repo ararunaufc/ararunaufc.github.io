@@ -1,10 +1,26 @@
 {% extends "base.html" %}
 
+{% import 'macros/project-entries.html' as project_macros %}
+
 {% block nav %}
 {{ macros_nav::top_nav(website_title=config.title, extra_items=config.extra.menu_items, active_item=section.title) }}
 {% endblock nav %}
 
 {% block page_content %}
+<section class="ui basic segment row">
+  <ul class="ui relaxed list items">
+    {% for page in section.pages %}
+    <li class="item">
+      <div class="content">
+        <a href="{{ page.permalink }}" class="header">{{ page.title }}</a>
+        <p class="description">{{ page.description }}</p>
+        <div class="meta">{{ project_macros::render_meta(project=page) }}</div>
+        <div class="extra">{{ project_macros::render_extra(project=page) }}</div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
 <!-- <div class="container max-w-3xl mx-auto px-4">
   <div class="font-sans py-8">
     <h1 class="font-bold font-sans break-normal text-gray-900 pb-2 text-3xl md:text-4xl">{{ section.title }}</h1>

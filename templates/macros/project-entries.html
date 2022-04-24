@@ -67,3 +67,38 @@ small
 tiny
 {% endif %}
 {%- endmacro %}
+
+{% macro render_extra(project) -%}
+{%- endmacro %}
+
+{% macro render_meta(project) -%}
+{% if project.extra.has_applicants %}
+<div class="ui horizontal basic orange icon label" title="Existem interessados em colaborar com este projeto">
+  <i class="user clock icon"></i>
+</div>
+{% else %}
+<div class="ui horizontal basic green icon label" title="Este projeto ainda não conta com interessados">
+  <i class="question circle icon"></i>
+</div>
+{% endif %}
+{% if project.taxonomies.academic_level %}
+<div class="ui right pointing horizontal basic grey label" title="Níveis acadêmicos compatíveis">
+  <i class="user graduate icon"></i>
+</div>
+<div class="ui tiny horizontal divided list" style="margin-right: 1em;">
+  {% for academic_level in project.taxonomies.academic_level %}
+  <div class="item">{{ academic_level }}</div>
+  {% endfor %}
+</div>
+{% endif %}
+{% if project.taxonomies.area %}
+<div class="ui right pointing horizontal basic grey label" title="Áreas associadas ao projeto">
+  <i class="book reader icon"></i>
+</div>
+<div class="ui tiny horizontal divided list" style="margin-right: 1em;">
+  {% for area in project.taxonomies.area %}
+  <div class="item">{{ area }}</div>
+  {% endfor %}
+</div>
+{% endif %}
+{%- endmacro %}
