@@ -7,4 +7,4 @@ weight = 10
 updated = "2022-04-24"
 +++
 
-Os projetos listados nesta categoria estão em andamento. Alguns deles correspondem a trabalhos de orientação acadêmica e outros de pesquisa científica com ou sem colaboradores.
+Os projetos listados nesta seção estão em andamento. Alguns deles correspondem a trabalhos de orientação acadêmica e outros de pesquisa científica com ou sem colaboradores.

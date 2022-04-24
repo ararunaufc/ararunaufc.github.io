@@ -17,7 +17,7 @@
       <h1 class="ui large header">
         {{ subsection.title }}
         <div class="ui left pointing basic horizontal blue label"
-          title="Existem {{ subsection_pages }} entradas nesta categoria">
+          title="Existem {{ subsection_pages }} entradas nesta seção">
           <i class="file alternate icon"></i>
           {{ subsection_pages }}
         </div>
@@ -38,7 +38,7 @@
       <div class="item"><a href="{{ subsection.permalink }}">Ver
           todas as entradas</a></div>
       {% else %}
-      <em>&mdash; (Nenhum projeto nesta categoria)</em>
+      <em>&mdash; (Nenhum projeto nesta seção)</em>
       {%- endif %}
     </main>
   </section>
@@ -70,7 +70,7 @@
         {{ publication::publication_summary(page=page) }}
       </li>
       {%- else %}
-      <li class="pb-3 text-gray-500">Nenhum projeto nesta categoria no momento.</li>
+      <li class="pb-3 text-gray-500">Nenhum projeto nesta seção no momento.</li>
       {%- endfor %}
     </ul>
 
@@ -84,7 +84,7 @@
         {{ publication::publication_summary(page=page) }}
       </li>
       {%- else %}
-      <li class="pb-3 text-gray-500">Nenhum projeto nesta categoria no momento.</li>
+      <li class="pb-3 text-gray-500">Nenhum projeto nesta seção no momento.</li>
       {%- endfor %}
     </ul>
 
@@ -106,7 +106,7 @@
       {% set entries = section.pages | filter(attribute="extra.type", value="Tool") | length %}
       {% set entries = section.pages | filter(attribute="extra.type", value="Process") | length + entries %}
       {%- if entries == 0 %}
-      <li class="pb-3 text-gray-500">Nenhum projeto nesta categoria no momento.</li>
+      <li class="pb-3 text-gray-500">Nenhum projeto nesta seção no momento.</li>
       {%- endif %}
     </ul>
   </main>

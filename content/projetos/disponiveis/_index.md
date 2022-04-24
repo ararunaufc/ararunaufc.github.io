@@ -7,4 +7,4 @@ weight = 20
 updated = "2022-04-24"
 +++
 
-Os projetos listados nesta categoria são de interesse e estão disponíveis para colaboração ou orientação.
+Os projetos listados nesta seção são de interesse e estão disponíveis para colaboração ou orientação.

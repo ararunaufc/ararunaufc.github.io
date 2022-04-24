@@ -1,7 +1,7 @@
 {% macro entries_in_section(count=0) -%}
 {% if count == 0 -%}
-Não existem entradas nesta categoria
+Não existem entradas nesta seção
 {%- else -%}
-Existe{{ count | pluralize(plural='m') }} {{ count }} entrada{{ count | pluralize }} nesta categoria
+Existe{{ count | pluralize(plural='m') }} {{ count }} entrada{{ count | pluralize }} nesta seção
 {%- endif %}
 {%- endmacro %}
