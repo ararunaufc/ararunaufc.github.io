@@ -10,4 +10,4 @@ weight = 10
 summary_recurse = true
 +++
 
-Veja alguns dos projetos de interesse. Para ver todos os projetos em uma seção, clique no nome da seção. Para ver um projeto da lista em específico, clique no seu título.
+Veja alguns dos projetos de interesse. Para ver todos os projetos em uma seção, clique em seu nome. Para ver um projeto em específico da lista, clique em seu título.
