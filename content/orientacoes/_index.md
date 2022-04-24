@@ -1,6 +1,6 @@
 +++
 title = "Orientações"
-template = "projects-list.html"
+template = "section-summary.html"
 page_template = "advisory-page.html"
 sort_by = "date"
 updated = "2022-04-24"

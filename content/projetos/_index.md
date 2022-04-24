@@ -1,6 +1,6 @@
 +++
 title = "Projetos"
-template = "projects-list.html"
+template = "section-summary.html"
 page_template = "project-page.html"
 sort_by = "weight"
 updated = "2022-04-24"
