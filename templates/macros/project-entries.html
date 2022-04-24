@@ -73,16 +73,19 @@ tiny
 
 {% macro render_meta(project) -%}
 {% if project.extra.has_applicants %}
-<div class="ui horizontal basic orange icon label" title="Existem interessados em colaborar com este projeto">
+<div class="ui horizontal basic orange icon label" data-custom-cursor="help"
+  title="Existem interessados em colaborar com este projeto">
   <i class="user clock icon"></i>
 </div>
 {% else %}
-<div class="ui horizontal basic green icon label" title="Este projeto ainda não conta com interessados">
+<div class="ui horizontal basic green icon label" data-custom-cursor="help"
+  title="Este projeto ainda não conta com interessados">
   <i class="question circle icon"></i>
 </div>
 {% endif %}
 {% if project.taxonomies.academic_level %}
-<div class="ui right pointing horizontal basic grey label" title="Níveis acadêmicos compatíveis">
+<div class="ui right pointing horizontal basic grey label" data-custom-cursor="help"
+  title="Níveis acadêmicos compatíveis">
   <i class="user graduate icon"></i>
 </div>
 <div class="ui tiny horizontal divided list" style="margin-right: 1em;">
@@ -92,7 +95,8 @@ tiny
 </div>
 {% endif %}
 {% if project.taxonomies.area %}
-<div class="ui right pointing horizontal basic grey label" title="Áreas associadas ao projeto">
+<div class="ui right pointing horizontal basic grey label" data-custom-cursor="help"
+  title="Áreas associadas ao projeto">
   <i class="book reader icon"></i>
 </div>
 <div class="ui tiny horizontal divided list" style="margin-right: 1em;">
