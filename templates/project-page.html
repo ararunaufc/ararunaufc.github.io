@@ -16,6 +16,10 @@
   aside+section>p:first-child {
     margin-top: 1em;
   }
+
+  .extra-top {
+    margin-top: 2em;
+  }
 </style>
 {% endblock styles %}
 
@@ -49,4 +53,29 @@
 <aside class="meta">{{ project_macros::render_meta(project=page) }}</aside>
 <aside class="extra">{{ project_macros::render_extra(project=page) }}</aside>
 {{ super() }}
+{% if page.extra.members -%}
+<section class="extra-top">
+  <h2 class="ui header">Participantes</h2>
+  <ul class="ui list">
+    {% for member in page.extra.members -%}
+    <li class="ui item">
+      <div class="header">{{ member.name }}</div>
+      <div class="content">
+        <div class="ui horizontal bulleted list">
+          <div class="item" title="Participação">{{ member.role | default(value="Colaborador") }}</div>
+          {% if member.academic_level %}<div class="item" title="Nível Acadêmico">{{ member.academic_level }}</div>
+          {% endif %}
+          {% if member.course %}<div class="item" title="Curso">{{ member.course }}</div>{% endif %}
+        </div>
+      </div>
+      {% if member.project_type -%}
+      <div class="meta">
+        {{- member.project_type -}}
+      </div>
+      {%- endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif %}
 {% endblock page_content %}
