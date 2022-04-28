@@ -4,7 +4,6 @@ description = 'Para linguagens que gerenciam memória de maneira automática, ge
 weight = 15
 date = 2022-01-01
 updated = "2022-04-23"
-draft = true
 
 [taxonomies]
 area = [ "Estruturas de Dados", "Algoritmos" ] # TODO: Corrigir áreas
