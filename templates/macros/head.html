@@ -9,10 +9,28 @@
 
 {% macro katex(autorender) -%}
 {% if config.extra.katex_enable %}
-<link rel="stylesheet" href="katex/katex.min.css">
-<script defer src="katex/katex.min.js"></script>
-{% if autorender %}
-<script defer src="katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+{#
+    <!-- TODO: Adicionar lógica de percorrer todos os arquivos de fonte do katex -->
+{% if config.extra.katex_preload_fonts %}
+{% for %}
+<link rel="preload" href=(path to WOFF2 font) as="font" type="font/woff2">
+{% endfor %}
 {% endif %}
+#}
+<link rel="stylesheet" href="/katex/katex.min.css">
+
+<script defer type="module">
+    import katex from '/katex/katex.mjs';
+</script>
+{% if autorender -%}
+<script defer type="module">
+    import renderMathInElement from "/katex/contrib/auto-render.mjs";
+    renderMathInElement(document.body);
+</script>
+{%- endif %}
+<script nomodule defer src="/katex/katex.min.js"></script>
+{% if autorender -%}
+<script nomodule defer src="/katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+{%- endif %}
 {% endif %}
 {%- endmacro %}
