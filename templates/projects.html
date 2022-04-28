@@ -24,8 +24,8 @@
         <a href="{{ page.permalink }}" class="header">{{ page.title }}{% if page.draft %} <div
             class="ui left pointing horizontal yellow label">Rascunho</div>{% endif %}</a>
         <p class="description">{{ page.description }}</p>
-        <div class="meta">{{ project_macros::render_meta(project=page) }}</div>
-        <div class="extra">{{ project_macros::render_extra(project=page) }}</div>
+        <aside class="meta">{{ project_macros::render_meta(project=page) }}</aside>
+        <aside class="extra">{{ project_macros::render_extra(project=page) }}</aside>
       </div>
     </li>
     {% endfor %}
