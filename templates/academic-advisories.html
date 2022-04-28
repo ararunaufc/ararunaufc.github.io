@@ -10,7 +10,7 @@
     {{ section.content | safe }}
   </div>
   {% for subsec_path in section.subsections -%}
-  <section class="row" style="margin-top: 1.5em;">
+  <section style="margin-top: 1.5em;">
     {% set subsection=get_section(path=subsec_path) %}
     {% set subsection_pages=subsection.pages | length %}
     <header>

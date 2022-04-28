@@ -21,10 +21,8 @@
 
 
 {% block page_content %}
-<div class="one column row">
-  <div class="ui basic segment">
-    {{ section.content | safe }}
-  </div>
-  {{ project::render_section(section=section) }}
-</div>
+<section class="ui basic fitted segment">
+  {{ section.content | safe }}
+</section>
+{{ project::render_section(section=section) }}
 {% endblock page_content %}

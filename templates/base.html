@@ -36,6 +36,14 @@
     .katex {
       font-size: 1.1em;
     }
+
+    body>main>header {
+      margin-bottom: 1.5em;
+    }
+
+    body>header {
+      margin-bottom: 1em;
+    }
   </style>
   {% endblock styles -%}
 
@@ -65,10 +73,10 @@
   <!-- !FIXME Remover gambiarra da margem -->
   #}
   <!-- Container -->
-  <main class="ui stackable grid" style="margin-top: 1em;">
+  <main>
     {%- block page_title %}
     <header>
-      <nav class="row">
+      <nav>
         <div class="ui mini breadcrumb">
           {% if section -%}
           {{ macros_nav::section_breadcrumbs(section=section) }}
@@ -77,7 +85,7 @@
           {%- endif %}
         </div>
       </nav>
-      <h1 class="row" style="margin-top: 0.1em;">
+      <h1 style="margin-top: 0.1em;">
         {%- if section -%}
         {{ section.title }}
         {%- elif page -%}
@@ -88,14 +96,12 @@
     {% endblock page_title -%}
 
     {%- block page_content %}
-    <section class="row">
-      <div class="ui basic segment">
-        {%- if section -%}
-        {{ section.content | safe }}
-        {%- elif page -%}
-        {{ page.content | safe }}
-        {%- endif -%}
-      </div>
+    <section>
+      {%- if section -%}
+      {{ section.content | safe }}
+      {%- elif page -%}
+      {{ page.content | safe }}
+      {%- endif -%}
     </section>
     {% endblock page_content -%}
   </main>

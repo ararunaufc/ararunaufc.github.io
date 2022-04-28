@@ -37,9 +37,7 @@
 </article>
 </div> -->
 #}
-<div class="row">
-  <aside class="meta">{{ project_macros::render_meta(project=page) }}</aside>
-  <aside class="extra">{{ project_macros::render_extra(project=page) }}</aside>
-</div>
+<aside class="meta">{{ project_macros::render_meta(project=page) }}</aside>
+<aside class="extra">{{ project_macros::render_extra(project=page) }}</aside>
 {{ super() }}
 {% endblock page_content %}
