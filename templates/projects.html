@@ -21,7 +21,8 @@
     {% for page in section.pages %}
     <li class="item">
       <div class="content">
-        <a href="{{ page.permalink }}" class="header">{{ page.title }}</a>
+        <a href="{{ page.permalink }}" class="header">{{ page.title }}{% if page.draft %} <div
+            class="ui left pointing horizontal yellow label">Rascunho</div>{% endif %}</a>
         <p class="description">{{ page.description }}</p>
         <div class="meta">{{ project_macros::render_meta(project=page) }}</div>
         <div class="extra">{{ project_macros::render_extra(project=page) }}</div>

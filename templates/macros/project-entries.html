@@ -83,31 +83,31 @@ tiny
 
 {% macro render_meta(project) -%}
 {% if project.extra.has_applicants %}
-<div class="ui horizontal basic orange icon label" data-custom-cursor="help"
+<div class="ui horizontal basic orange label" data-custom-cursor="help"
   title="Existem interessados em colaborar com este projeto">
   <i class="user clock icon"></i>
+  Existem interessados
 </div>
 {% else %}
-<div class="ui horizontal basic green icon label" data-custom-cursor="help"
+<div class="ui horizontal basic green label" data-custom-cursor="help"
   title="Este projeto ainda não conta com interessados">
   <i class="question circle icon"></i>
+  Disponível
 </div>
 {% endif %}
 {% if project.taxonomies.academic_level %}
-<div class="ui right pointing horizontal basic blue label" data-custom-cursor="help"
-  title="Níveis acadêmicos compatíveis">
+{% for academic_level in project.taxonomies.academic_level %}
+<div class="ui horizontal basic violet label" data-custom-cursor="help" title="Nível acadêmico compatível">
   <i class="user graduate icon"></i>
+  {{ academic_level }}
 </div>
-<div class="ui tiny horizontal divided list" style="margin-right: 1em;">
-  {% for academic_level in project.taxonomies.academic_level %}
-  <div class="item">{{ academic_level }}</div>
-  {% endfor %}
-</div>
+{% endfor %}
 {% endif %}
 {% if project.taxonomies.area %}
-<div class="ui right pointing horizontal basic violet label" data-custom-cursor="help"
+<div class="ui right pointing horizontal basic blue label" data-custom-cursor="help"
   title="Áreas associadas ao projeto">
   <i class="book reader icon"></i>
+  Áreas
 </div>
 <div class="ui tiny horizontal divided list" style="margin-right: 1em;">
   {% for area in project.taxonomies.area %}
@@ -119,6 +119,7 @@ tiny
 <div class="ui right pointing horizontal basic grey label" data-custom-cursor="help"
   title="Artefatos gerados pelo projeto">
   <i class="drafting compass icon"></i>
+  Artefatos
 </div>
 <div class="ui tiny horizontal divided list" style="margin-right: 1em;">
   {% for artifact in project.taxonomies.artifact %}
