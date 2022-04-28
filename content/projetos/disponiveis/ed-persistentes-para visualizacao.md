@@ -53,14 +53,18 @@ Não faz parte do escopo _deste_ projeto:
 
 ### Cursos desejáveis
 
-OBS: Os cursos a seguir são os têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.
+{% ui_message(type="info") %}
+Os cursos a seguir são os têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.
+{% end %}
 
 1. Ciência da Computação
 2. Engenharia de Software
 
 ### Disciplinas desejáveis
 
-OBS: As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.
+{% ui_message(type="info") %}
+As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.
+{% end %}
 
 - Estrutura de Dados Avançada
 - Projeto e Análise de Algoritmos
