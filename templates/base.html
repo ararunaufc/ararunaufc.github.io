@@ -24,7 +24,12 @@
   {% block head -%}
   <meta charset="utf-8">
 
+  {% block fomantic_ui %}
   {{ macros_head::fomanticui() }}
+  {% endblock %}
+  {% block katex %}
+  {{ macros_head::katex(autorender=config.extra.katex_auto_render) }}
+  {% endblock %}
 
   {% block styles -%}
   {% endblock styles -%}

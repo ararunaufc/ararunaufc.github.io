@@ -1,8 +1,18 @@
 {% macro fomanticui() -%}
 
-<!-- You MUST include jQuery before Fomantic -->
+{# You MUST include jQuery before Fomantic #}
 <script src="/js/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="/fomantic-ui/semantic.min.css">
 <script src="/fomantic-ui/semantic.min.js"></script>
 
+{%- endmacro %}
+
+{% macro katex(autorender) -%}
+{% if config.extra.katex_enable %}
+<link rel="stylesheet" href="katex/katex.min.css">
+<script defer src="katex/katex.min.js"></script>
+{% if autorender %}
+<script defer src="katex/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+{% endif %}
+{% endif %}
 {%- endmacro %}

@@ -1,7 +1,13 @@
 {% extends "base.html" %}
 
+{% import 'macros/head.html' as macros_head %}
+
 {% set parent_section = get_section(path=page.ancestors | last, metadata_only=true) -%}
 {% set top_section = get_section(path=page.ancestors[1], metadata_only=true) %}
+
+{% block katex %}
+macros_head::katex(autorender=page.extra.katex_auto_render | default(value=config.extra.katex_auto_render))
+{% endblock %}
 
 {% block title -%}
 <title>{{ page.title }} | {% if parent_section -%}{{ parent_section.title }} | {% endif %} {{- config.title }}</title>
