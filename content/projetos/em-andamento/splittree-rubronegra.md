@@ -4,7 +4,6 @@ description = 'Uma Árvore Split é uma árvore binária de busca que admite uma
 weight = 0
 date = 2022-01-01
 updated = "2022-04-28"
-draft = true
 
 [taxonomies]
 area = [ "Estruturas de Dados" ]
