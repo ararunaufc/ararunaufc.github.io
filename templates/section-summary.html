@@ -6,6 +6,20 @@
 {{ macros_nav::top_nav(website_title=config.title, extra_items=config.extra.menu_items, active_item=section.title) }}
 {% endblock nav %}
 
+{% block styles %}
+{{ super() }}
+<style type="text/css">
+  .column:not(:first-of-type) .relaxed-header {
+    margin-top: 2em;
+  }
+
+  .relaxed-header {
+    margin-bottom: 1em;
+  }
+</style>
+{% endblock %}
+
+
 {% block page_content %}
 <div class="one column row">
   <div class="ui basic segment">

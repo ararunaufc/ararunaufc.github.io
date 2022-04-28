@@ -7,8 +7,8 @@
 {% set section_pages = section.pages | length %}
 <section class="column">
   {% if not is_root %}
-  <header style="margin-bottom: 1em;">
-    <h{{level}} class="ui {{ self::header_class(level=level) }} header">
+  <header class="relaxed-header">
+    <h{{level}} class="ui header">
       <a href="{{ section.permalink }}"
         title="{{ messages::entries_in_section(count=section_pages) }} - Clique para ver toda a seção">
         {{ section.title }}
@@ -60,7 +60,7 @@
 {% if level == 0 %}
 huge
 {% elif level == 1 %}
-large
+medium
 {% elif level == 2 %}
 small
 {% else %}
