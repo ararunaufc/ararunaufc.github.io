@@ -6,7 +6,7 @@ date = 2022-01-01
 updated = "2022-04-28"
 
 [taxonomies]
-area = [ "Sistemas Distribuídos" ]
+area = [ "Sistemas Distribuídos", "Sistemas Operacionais" ]
 academic_level = [ "Graduação", "Mestrado" ]
 artifact = [ "Software", "Artigo", "Monografia / Dissertação" ]
 
@@ -65,7 +65,8 @@ Os cursos a seguir são os que têm perfil mais próximo ao necessário para o p
 As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.
 {% end %}
 
-- Redes de Computadores
+- Sistemas Operacionais
 - Sistemas Distribuídos
+- Redes de Computadores
 - Redes e Sistemas Distribuídos
 - Análise de Desempenho de Sistemas
