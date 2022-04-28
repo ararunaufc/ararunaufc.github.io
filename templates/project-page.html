@@ -1,17 +1,19 @@
 {% extends "base.html" %}
 
+{% set parent_section = get_section(path=page.ancestors | last, metadata_only=true) -%}
+{% set top_section = get_section(path=page.ancestors[1], metadata_only=true) %}
+
 {% block title -%}
-{% set section = get_section(path=page.ancestors[1], metadata_only=true) -%}
-<title>{% if section -%}{{ section.title }} | {% endif %} {{ config.title }}</title>
+<title>{{ page.title }} | {% if parent_section -%}{{ parent_section.title }} | {% endif %} {{- config.title }}</title>
 {% endblock title -%}
 
 {% block nav %}
-{% set section = get_section(path=page.ancestors[1], metadata_only=true) %}
-{{ macros_nav::top_nav(website_title=config.title, extra_items=config.extra.menu_items, active_item=section.title) }}
+{{ macros_nav::top_nav(website_title=config.title, extra_items=config.extra.menu_items, active_item=top_section.title | default(value="")) }}
 {% endblock nav %}
 
-{% block content %}
-<div class="container max-w-3xl mx-auto px-4">
+{#
+{% block page_content %}
+<!-- <div class="container max-w-3xl mx-auto px-4">
   <div class="pt-8 flex flex">
     <h1 class="grow font-bold font-sans break-normal text-gray-900 text-3xl">{{ page.title }}</h1>
     {% if page.extra.start_date and page.extra.end_date -%}
@@ -23,8 +25,9 @@
   {% if page.extra.tldr %}
   <p class="pb-4 text-gray-600"> <span class="font-bold">TLDR.</span> {{ page.extra.tldr | safe }} </p>
   {% endif %}
-  <article class="prose prose-indigo prose max-w-3xl">
-    {{ page.content | safe }}
-  </article>
-</div>
-{% endblock content %}
+  <article class="prose prose-indigo prose max-w-3xl"> -->
+{{ page.content | safe }}
+<!-- </article>
+</div> -->
+{% endblock page_content %}
+#}
