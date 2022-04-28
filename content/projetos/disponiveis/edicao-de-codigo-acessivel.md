@@ -45,7 +45,7 @@ O escopo definitivo do trabalho ainda não está definido.
 ### Cursos desejáveis
 
 {% ui_message(type="info")) %}
-Os cursos a seguir são os têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.
+Os cursos a seguir são os que têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.
 {% end %}
 
 1. Engenharia de Software
