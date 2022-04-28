@@ -6,7 +6,7 @@
 {% set top_section = get_section(path=page.ancestors[1], metadata_only=true) %}
 
 {% block katex %}
-macros_head::katex(autorender=page.extra.katex_auto_render | default(value=config.extra.katex_auto_render))
+{{ macros_head::katex(autorender=page.extra.katex_auto_render | default(value=config.extra.katex_auto_render)) }}
 {% endblock %}
 
 {% block title -%}
