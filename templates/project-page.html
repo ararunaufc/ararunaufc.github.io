@@ -10,6 +10,15 @@
 {{ macros_head::katex(autorender=page.extra.katex_auto_render | default(value=config.extra.katex_auto_render)) }}
 {% endblock %}
 
+{% block styles %}
+{{ super() }}
+<style>
+  aside+section>p:first-child {
+    margin-top: 1em;
+  }
+</style>
+{% endblock styles %}
+
 {% block title -%}
 <title>{{ page.title }} | {% if parent_section -%}{{ parent_section.title }} | {% endif %} {{- config.title }}</title>
 {% endblock title -%}
