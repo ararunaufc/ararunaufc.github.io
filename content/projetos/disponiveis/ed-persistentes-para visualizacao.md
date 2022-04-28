@@ -16,6 +16,12 @@ artifact = [ "Software" ]
 type = "Research"
 available = true
 has_applicants = true
+
+[[extra.members]]
+name = "Ancelmo de Souza Lopes"
+course = "Ciência da Computação"
+academic_level = "Graduação"
+project_type = "Trabalho de Conclusão de Curso"
 +++
 
 ## Nível acadêmico compatível
