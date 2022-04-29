@@ -20,10 +20,6 @@ katex_auto_render = true
 [[extra.members]]
 name = "Prof. Dr. Victor Almeida Campos"
 role = "Orientador"
-
-[[extra.members]]
-name = "Arthur Rodrigues Araruna"
-role = "Doutorando"
 +++
 
 Este é um dos projetos em que estou envolvido como parte do meu Doutorado.
