@@ -44,7 +44,7 @@ O escopo definitivo do trabalho ainda não está definido.
 
 ### Cursos desejáveis
 
-{% ui_message(type="info")) %}
+{% ui_message(type="info") %}
 Os cursos a seguir são os que têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.
 {% end %}
 
@@ -53,7 +53,7 @@ Os cursos a seguir são os que têm perfil mais próximo ao necessário para o p
 
 ### Disciplinas desejáveis
 
-{% ui_message(type="info")) %}
+{% ui_message(type="info") %}
 As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.
 {% end %}
 
