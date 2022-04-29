@@ -1,0 +1,58 @@
+{% import 'macros/images.html' as macros_image %}
+
+{% extends "base.html" %}
+
+{% set parent_section = get_section(path=page.ancestors | last, metadata_only=true) -%}
+{% set top_section = get_section(path=page.ancestors[1], metadata_only=true) %}
+
+{% block katex %}
+{{ macros_head::katex(autorender=page.extra.katex_auto_render | default(value=config.extra.katex_auto_render)) }}
+{% endblock %}
+
+{% block title -%}
+<title>{{ page.title }} | {% if parent_section -%}{{ parent_section.title }} | {% endif %} {{- config.title }}</title>
+{% endblock title -%}
+
+{% block nav %}
+{{ macros_nav::top_nav(website_title=config.title, extra_items=config.extra.menu_items, active_item=top_section.title | default(value="")) }}
+{% endblock nav %}
+
+{% if page.extra.pictures %}
+{% block styles %}
+{{ super() }}
+{{ macros_image::gallery_styles() }}
+{% endblock styles %}
+{% endif %}
+
+{% block page_content %}
+<section>
+  <table class="ui definition table">
+    <tbody>
+      <tr>
+        <td>Evento:</td>
+        <td>{{ page.extra.event }}</td>
+      </tr>
+      <tr>
+        <td>Local:</td>
+        <td>{{ page.extra.location }}</td>
+      </tr>
+      <tr>
+        <td>Data:</td>
+        {# <!-- !FIXME: Acompanhar https://github.com/Keats/tera/issues/612 --> -#}
+        <td>{{ page.date | date(format="%d/%m/%Y") }}</td>
+      </tr>
+      <tr>
+        <td>Apresentação:</td>
+        <td>{{ page.extra.seminar_type }}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+{{ super() }}
+{% if page.extra.render_gallery %}
+<section>
+  <h2 class="ui header">Imagens</h2>
+  {{ macros_image::gallery(page=page, gallery=page.extra.render_gallery) }}
+</section>
+{% endif %}
+{% endblock page_content %}
