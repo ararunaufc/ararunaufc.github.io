@@ -17,12 +17,12 @@
 {{ macros_nav::top_nav(website_title=config.title, extra_items=config.extra.menu_items, active_item=top_section.title | default(value="")) }}
 {% endblock nav %}
 
-{% if page.extra.pictures %}
 {% block styles %}
 {{ super() }}
+{% if page.extra.render_gallery is defined %}
 {{ macros_image::gallery_styles() }}
-{% endblock styles %}
 {% endif %}
+{% endblock styles %}
 
 {% block page_content %}
 <section>

@@ -16,8 +16,8 @@
 {% set image_jpg = resize_image(path=config.extra.avatar, format="jpg", width=150, height=150) %}
 <div class="ui stackable grid content"> {# Ends on page_content #}
   <header class="six wide center aligned column">
-    <img class="ui centered circular image" srcset="{{image_webp.url}}, {{image_png.url}}" src="{{image_jpg.url}}"
-      alt="Foto do Professor Arthur Araruna." />
+    <img class="ui centered circular image" srcset="{{image_webp.url}}, {{image_png.url}}, {{image_jpg.url}}"
+      src="{{image_jpg.url}}" alt="Foto do Professor Arthur Araruna." />
     <div class="ui header">
       <h1 class="content">{{ config.title }}</h1>
       {% if section.extra.title %}

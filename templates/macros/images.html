@@ -17,20 +17,20 @@
         {% if asset is matching(gallery ~ "\-[0-9]+\.(jpg|jpeg|png|webp)$") -%}
         {% set picture = get_image_metadata(path=asset) %}
         {% if picture and picture.width > picture.height %}
-        {% set picture_big = resize_image(path=asset, width=1280, height=720, op="fit") %}
-        {% set picture_medium = resize_image(path=asset, width=914, height=514, op="fit") %}
+        {% set picture_big = resize_image(path=asset, width=1440, height=810, op="fit") %}
+        {% set picture_medium = resize_image(path=asset, width=1024, height=576, op="fit") %}
         {% set picture_small = resize_image(path=asset, width=640, height=360, op="fit") %}
         {% elif picture %}
-        {% set picture_big = resize_image(path=asset, width=576, height=720, op="fill") %}
-        {% set picture_medium = resize_image(path=asset, width=411, height=514, op="fill") %}
-        {% set picture_small = resize_image(path=asset, width=288, height=360, op="fill") %}
+        {% set picture_big = resize_image(path=asset, width=648, height=810, op="fit") %}
+        {% set picture_medium = resize_image(path=asset, width=461, height=576, op="fit") %}
+        {% set picture_small = resize_image(path=asset, width=288, height=360, op="fit") %}
         {% endif %}
         {%- endif %}
         {% if picture %}
         <figure>
             <label for="image-fullscreen">
                 <img src="{{ picture_big.url }}"
-                    srcset="{{ picture_medium.url }} {{ picture_medium.width }}w, {{ picture_small.url }} {{ picture_small.width }}w"
+                    srcset="{{ picture_big.url }} {{ picture_big.width }}w, {{ picture_medium.url }} {{ picture_medium.width }}w, {{ picture_small.url }} {{ picture_small.width }}w"
                     alt="Foto relacionada ao evento." />
             </label>
         </figure>
@@ -47,7 +47,7 @@
         {% if asset is matching(gallery ~ "\-[0-9]+\.(jpg|jpeg|png|webp)$") -%}
         {% set picture = get_image_metadata(path=asset) %}
         {% if picture and picture.width > picture.height %}
-        {% set thumbnail = resize_image(path=asset, width=100, height=56, op="fit") %}
+        {% set thumbnail = resize_image(path=asset, width=100, height=56, op="fill") %}
         {% elif picture %}
         {% set thumbnail = resize_image(path=asset, width=45, height=56, op="fill") %}
         {% endif %}
