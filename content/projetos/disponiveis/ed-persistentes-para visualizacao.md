@@ -31,7 +31,7 @@ Trabalho de Conclusão de Curso
 
 ## Descrição
 
-Estudo de Estruturas de Dados Persistentes (Temporais) para posterior implementação de um visualizador gráfico de estruturas de dados. Esse visualizador deve ser usado como auxiliar no ensino de conteúdos para as disciplinas de ED e EDA.
+Estudo de Estruturas de Dados Persistentes (Temporais) para posterior implementação de um visualizador gráfico de estruturas de dados. Esse visualizador deve ser usado como auxiliar no ensino de conteúdos para as disciplinas de ED e EDA, com foco no _Campus_ da UFC em Quixadá.
 
 ## Possíveis Atividades
 
