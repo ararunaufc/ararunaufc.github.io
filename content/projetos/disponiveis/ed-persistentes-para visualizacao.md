@@ -42,7 +42,7 @@ Estudo de Estruturas de Dados Persistentes (Temporais) para posterior implementa
 
 ## Escopo
 
-O escopo definitivo do trabalho ainda não está definido.
+O escopo definitivo do projeto ainda não está definido.
 
 ## Não-escopo
 
