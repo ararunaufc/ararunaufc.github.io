@@ -42,9 +42,29 @@ Estudo de Estruturas de Dados Persistentes (Temporais) para posterior implementa
 
 ## Escopo
 
+{% ui_message(type="info") %}
+Cada seção de escopo a seguir representa um trabalho distinto que pode ser derivado deste projeto.
+{% end %}
+
 {% ui_message(type="warning") %}
 O escopo definitivo do projeto ainda não está definido.
 {% end %}
+
+### Visualização de execução
+
+Fazer uso de _persistência parcial_ para:
+
+- Permitir visualização das alterações realizadas pela implementação fornecida.
+- Permitir navegação sobre a evolução das alterações.
+
+### Visualização de funcionamento
+
+Fazer uso de _persistência total_ para:
+
+- Permitir visualização do funcionamento correto de um algoritmo.
+- Permitir interação com algoritmos, obtendo entradas fornecidas pelo usuário.
+- Permitir navegação sobre a evolução das alterações.
+- Permitir observação do comportamento gerado por sequência alternativa de operações, realizadas a partir de um ponto anterior na evolução.
 
 ## Não-escopo
 
