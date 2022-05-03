@@ -8,7 +8,7 @@ date = 2022-01-01
 updated = "2022-04-21"
 
 [taxonomies]
-area = [ "Linguagens de Programação", "Interação Humano-Computador", ]
+area = [ "Estruturas de Dados" ]
 academic_level = [ "Graduação" ]
 artifact = [ "Software" ]
 
