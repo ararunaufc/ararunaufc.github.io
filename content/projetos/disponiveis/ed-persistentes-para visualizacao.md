@@ -42,7 +42,9 @@ Estudo de Estruturas de Dados Persistentes (Temporais) para posterior implementa
 
 ## Escopo
 
+{% ui_message(type="warning") %}
 O escopo definitivo do projeto ainda não está definido.
+{% end %}
 
 ## Não-escopo
 
