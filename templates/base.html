@@ -33,6 +33,7 @@
   {% endblock %}
 
   {% block styles -%}
+  <!-- DoNotFormat -->
   <style type="text/css">
     .katex {
       font-size: 1.1em;
@@ -45,7 +46,13 @@
     body>header {
       margin-bottom: 1em;
     }
+
+    {% block page_styles %}
+
+    {% endblock page_styles %}
   </style>
+  <!-- DoNotFormat -->
+
   {% endblock styles -%}
 
 
