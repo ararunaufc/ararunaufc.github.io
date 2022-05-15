@@ -1,0 +1,7 @@
+@Conference{AndradeArarunaLisser2012,
+  author       = "Rafael Andrade and Arthur Araruna and Abdel Lisser",
+  title        = "Probabilistic delay constrained shortest-path problem",
+  year         = "2012",
+  organization = "XIII Congrès Annuel de la Societé française de Recherche Opérationelle e d'Aide à la Decision, 2012",
+  abstract = {In this work, we introduce a new model for a resource (delay) constrained shortest-path (RCSP) problem. Our model intends to overcome the fact that, for some practical applications (e.g. routing in transportation networks), dealing with deterministic delays on network arcs may lead to solutions (paths) that, sometimes, violate in practice the required maximum delay constraint due to the increasing uncertain character of the arc delays, incurring in high penalties to service providers.}
+}
