@@ -13,6 +13,7 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v3.0.0
+      - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Build only 
         uses: shalzz/zola-deploy-action@v0.17.2
         env:
@@ -26,6 +27,7 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v3.0.0
+      - run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
       - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.17.2
         env:
