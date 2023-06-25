@@ -41,4 +41,4 @@ Arthur Araruna is a Professor and a Researcher at [Campus de Quixadá](https://w
 
 His research focuses on Data Structures, but he also has an interest in Optimization and Programming Languages.
 
-He is currently enrolled in a PhD in Computer Science with the [Masters and Doctorate in Computer Science Program](https://www.mdcc.ufc.br) from UFC, working on BST Computation Model and Dynamic Optimality.
+He is currently enrolled in a PhD in Computer Science with the [Masters and Doctorate in Computer Science Program](http://www.mdcc.ufc.br) from UFC, working on BST Computation Model and Dynamic Optimality.

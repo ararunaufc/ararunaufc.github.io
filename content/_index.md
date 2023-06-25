@@ -41,4 +41,4 @@ Arthur Araruna é Professor e Pesquisador no [Campus de Quixadá](https://www.qu
 
 Atua em pesquisa na área de Estrutura de Dados, mas também possui interesse em Otimização e Linguagens de Programação.
 
-Atualmente cursa Doutorado em Ciência da Computação pelo [{{ abbr(abbr="MDCC", title="Programa de Mestrado e Doutorado em Ciência da Computação") }}](https://www.mdcc.ufc.br) da UFC, trabalhando sobre Modelo BST de Computação e Otimalidade Dinâmica, sendo orientado pelo [Prof. Dr. Victor Almeida Campos](http://www.lia.ufc.br/~campos).
+Atualmente cursa Doutorado em Ciência da Computação pelo [{{ abbr(abbr="MDCC", title="Programa de Mestrado e Doutorado em Ciência da Computação") }}](http://www.mdcc.ufc.br) da UFC, trabalhando sobre Modelo BST de Computação e Otimalidade Dinâmica, sendo orientado pelo [Prof. Dr. Victor Almeida Campos](http://www.lia.ufc.br/~campos).
