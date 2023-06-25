@@ -1,9 +1,21 @@
-{% macro fomanticui() -%}
+{% macro fomanticui(modules) -%}
 
-{# You MUST include jQuery before Fomantic #}
+{#- You MUST include jQuery before Fomantic #}
 <script src="/js/jquery.min.js"></script>
+
+{#- Load CSS first #}
+{%- for mod in modules %}
+<link rel="stylesheet" type="text/css" href="/fomantic-ui/{{ mod }}.min.css">
+{%- else %}
 <link rel="stylesheet" type="text/css" href="/fomantic-ui/semantic.min.css">
+{%- endfor %}
+
+{#- Load JS next #}
+{%- for mod in modules %}
+<script src="/fomantic-ui/{{ mod }}.min.js"></script>
+{%- else %}
 <script src="/fomantic-ui/semantic.min.js"></script>
+{%- endfor %}
 
 {%- endmacro %}
 

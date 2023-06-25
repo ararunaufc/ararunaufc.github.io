@@ -11,7 +11,7 @@
 {% set section = load_data(path=current_path ~ "_index.md", required = false) -%}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
 
@@ -26,7 +26,7 @@
   <meta charset="utf-8">
 
   {% block fomantic_ui %}
-  {{ macros_head::fomanticui() }}
+  {{ macros_head::fomanticui(modules=[]) }}
   {% endblock %}
   {% block katex %}
   {{ macros_head::katex(autorender=config.extra.katex_auto_render) }}
