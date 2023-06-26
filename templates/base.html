@@ -61,14 +61,7 @@
 
 <body class="ui container">
 
-  <header>
-    <!-- Top nav bar -->
-    <nav class="ui secondary pointing menu">
-      {% block nav -%}
-      {{ macros_nav::top_nav(website_title=config.title, extra_items=config.extra.menu_items) }}
-      {% endblock nav -%}
-    </nav>
-  </header>
+  {% include "partials/header.html" %}
 
   {#
   <!-- !FIXME Remover gambiarra da margem -->

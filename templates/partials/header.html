@@ -1,0 +1,55 @@
+<header>
+  <!-- Top nav bar -->
+  <nav class="ui secondary pointing menu">
+    {% block nav -%}
+    {# macros_nav::top_nav(website_title=config.title, extra_items=config.extra.menu_items) #}
+    <div class="header item"><a href="{{ config.base_url }}">
+        {{ config.title | upper }}
+      </a></div>
+
+    <ul class="menu">
+      {# Get the top section -#}
+      {% set top_section = get_section(path="_index.md", metadata_only=true) -%}
+      {% if page %}
+        {% set active_section = get_section(path=page.ancestors | last, metadata_only=true) %}
+        {% set active_title = active_section.title %}
+      {% elif section %}
+        {% set active_title = section.title %}
+      {% else %}
+        {% set active_title = "none" %}
+      {% endif %}
+
+      {# Display primary sections as menu items #}
+      {% for subsec_path in top_section.subsections -%}
+
+      {% set subsection = get_section(path=subsec_path, metadata_only=true) -%}
+      {% if not subsection.extra.hidden_nav -%}
+      <li class="{% if subsection.title==active_title -%} active {%- endif %} item">
+        <a href={{ subsection.permalink }}>
+          {{subsection.title}}
+        </a>
+      </li>
+      {% endif -%}
+      {% endfor -%}
+    </ul>
+    {# Extra menu items #}
+    <ul class="right menu">
+      {% for item in config.extra.menu_items -%}
+      <li class="{% if subsection.title==active_title -%} active {%- endif %} item">
+        <a href={{ get_url(path=item.path, trailing_slash=false) }}>
+          {{item.name}}
+        </a>
+      </li>
+      {% endfor -%}
+    </ul>
+    <div class="ui simple dropdown right item">
+      <i class="large language icon"></i><i class="dropdown icon"></i>
+      <ul class="menu">
+        <!-- TODO Alterar para dados dinâmicos -->
+        <li class="active item">Português (Brasileiro)</li>
+        <li class="item">English</li>
+      </ul>
+    </div>
+    {% endblock nav -%}
+  </nav>
+</header>
