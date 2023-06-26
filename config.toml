@@ -5,12 +5,9 @@ description = "Informações profissionais sobre o Prof. Arthur Araruna do Campu
 
 default_language = "pt"
 
-# theme = "kodama-theme"
-compile_sass = false
 minify_html = true
 
 build_search_index = true
-generate_feed = true
 
 taxonomies = [
     { name = "area" },
@@ -20,11 +17,13 @@ taxonomies = [
 ]
 
 [markdown]
-highlight_code = false
 smart_punctuation = true
 
 external_links_target_blank = true
 external_links_no_follow = true
+
+[link_checker]
+external_level = "warn"
 
 [languages.en]
 title = "Prof. Arthur Araruna"
