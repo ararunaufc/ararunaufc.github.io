@@ -34,22 +34,28 @@
 
   {% block styles %}
   <style type="text/css">
-    .katex {
-      font-size: 1.1em;
-    }
+    {% block css_rules %}
+      .katex {
+        font-size: 1.1em;
+      }
 
-    body>main>header {
-      margin-bottom: 1.5em;
-    }
+      body>main>header {
+        margin-bottom: 1.5em;
+      }
 
-    body>header {
-      margin-bottom: 1em;
-    }
+      body>header {
+        margin-bottom: 1em;
+      }
+    {% endblock css_rules %}
   </style>
   {% endblock styles %}
 
 
   {% block scripts %}
+    <script type="application/javascript">
+    {% block js_content %}
+    {% endblock js_content %}
+    </script>
   {% endblock scripts %}
 
   {% block title %}
@@ -73,13 +79,13 @@
     {% endblock page_title %}
     
     {% block page_content %}
-    <section>
-      {% if section %}
-        {{ section.content | safe }}
-      {% elif page %}
-        {{ page.content | safe }}
-      {% endif %}
-    </section>
+      <section>
+        {% if section %}
+          {{ section.content | safe }}
+        {% elif page %}
+          {{ page.content | safe }}
+        {% endif %}
+      </section>
     {% endblock page_content %}
   </main>
 
