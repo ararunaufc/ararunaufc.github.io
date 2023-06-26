@@ -1,13 +1,11 @@
 {% extends "base.html" %}
 
-{% block styles %}
+{% block css_rules %}
   {{ super() }}
-  <style type="text/css">
-    body>header {
-      margin-bottom: 3em;
-    }
-  </style>
-{% endblock styles %}
+  body>header {
+    margin-bottom: 3em;
+  }
+{% endblock css_rules %}
 
 {% block page_title %}
   {% set image_webp = resize_image(path=config.extra.avatar, format="webp", width=150, height=150) %}
@@ -30,8 +28,7 @@
       <div class="ui horizontal list">
         {% for icon in section.extra.avatar_icons %}
         <div class="item">
-          <a href="{{ icon.link }}" title="{{ icon.title }}" target="_blank">{{ icons::factory(icon=icon.icon,classes="big
-          blue") }}</a>
+          <a href="{{ icon.link }}" title="{{ icon.title }}" target="_blank">{{ icons::factory(icon=icon.icon,classes="big primary") }}</a>
         </div>
         {% endfor %}
       </div>
@@ -39,46 +36,44 @@
   {% endblock page_title %}
 
   {% block page_content %}
-    {% block biography %}
-      <section class="ten wide column">
-        <div class="ui two column stackable grid">
-          <div class="row">
-            <h1>{{ trans(key="biography") }}</h1>
-            <div>{{ section.content | safe }}</div>
+    <section class="ten wide column">
+      <div class="ui two column stackable grid">
+        <div class="row">
+          <h1>{{ trans(key="biography") }}</h1>
+          <div>{{ section.content | safe }}</div>
+        </div>
+        {# TODO Remover hack de margem #}
+        <div class="row">
+          <div class="column">
+            <h2>{{ trans(key="interests") }}</h2>
+            <ul>
+              {% for interest in section.extra.interests %}
+              <li> {{ interest }} </li>
+              {% endfor %}
+            </ul>
           </div>
-          {# TODO Remover hack de margem #}
-          <div class="row">
-            <div class="column">
-              <h2>{{ trans(key="interests") }}</h2>
-              <ul>
-                {% for interest in section.extra.interests %}
-                <li> {{ interest }} </li>
-                {% endfor %}
-              </ul>
-            </div>
-            <div class="column">
-              <h2>{{ trans(key="education") }}</h2>
-              <div class="ui list">
-                {% for course in section.extra.education.courses %}
-                {#
-              <!-- ! FIXME Corrigir ícones da lista -->
-              <!--   TODO Voltar a tag de lista, por questão semântica -->
-              #}
-                <div class="item">
-                  <i class="large top aligned graduation cap icon"></i>
-                  <div class="content">
-                    <p class="header">{{ course.course }}, {{ course.year }}</p>
-                    <p class="description">
-                      {{ course.institution }}
-                    </p>
-                  </div>
+          <div class="column">
+            <h2>{{ trans(key="education") }}</h2>
+            <div class="ui list">
+              {% for course in section.extra.education.courses %}
+              {#
+            <!-- ! FIXME Corrigir ícones da lista -->
+            <!--   TODO Voltar a tag de lista, por questão semântica -->
+            #}
+              <div class="item">
+                <i class="large top aligned graduation cap icon"></i>
+                <div class="content">
+                  <p class="header">{{ course.course }}, {{ course.year }}</p>
+                  <p class="description">
+                    {{ course.institution }}
+                  </p>
                 </div>
-                {% endfor %}
               </div>
+              {% endfor %}
             </div>
           </div>
         </div>
-      </section>
-    {% endblock biography %}
+      </div>
+    </section>
   </div> {# Starts on page_title #}
 {% endblock page_content %}
