@@ -42,14 +42,14 @@ favicon = "static/img/Eu.jpg"
 
 menu_items = []
 
-[extra.translations.pt]
+[translations]
 lang_name = "Português (Brasileiro)"
 
 biography = "Biografia"
 interests = "Interesses"
 education = "Formação Acadêmica"
 
-[extra.translations.en]
+[languages.en.translations]
 lang_name = "English"
 
 biography = "Biography"
