@@ -1,0 +1,21 @@
+{% import "macros/nav.html" as macros_nav %}
+
+<header>
+  <nav>
+    <div class="ui mini breadcrumb">
+      {% if section -%}
+      {{ macros_nav::section_breadcrumbs(section=section) }}
+      {% elif page -%}
+      {{ macros_nav::page_breadcrumbs(page=page) }}
+      {%- endif %}
+    </div>
+  </nav>
+  <h1 style="margin-top: 0.1em;">
+    {%- if section -%}
+    {{ section.title }}
+    {%- elif page -%}
+    {{ page.title }}
+    {%- endif -%}
+  </h1>
+</header>
+

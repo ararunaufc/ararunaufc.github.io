@@ -1,4 +1,4 @@
-{% import 'macros/images.html' as macros_image %}
+{# import 'macros/images.html' as macros_image #}
 
 {% extends "base.html" %}
 
@@ -52,7 +52,7 @@
 {% if page.extra.render_gallery %}
 <section>
   <h2 class="ui header">Imagens</h2>
-  {{ macros_image::gallery(page=page, gallery=page.extra.render_gallery) }}
+  {# macros_image::gallery(page=page, gallery=page.extra.render_gallery) #}
 </section>
 {% endif %}
 {% endblock page_content %}

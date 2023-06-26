@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "titled_page.html" %}
 
 {% import 'macros/project-entries.html' as project_macros %}
 
@@ -13,7 +13,7 @@
     cursor: help;
   }
 </style>
-{% endblock %}
+{% endblock styles %}
 
 {% block page_content %}
 <section class="ui basic segment">
@@ -31,7 +31,8 @@
     {% endfor %}
   </ul>
 </section>
-<!-- <div class="container max-w-3xl mx-auto px-4">
+{% endblock page_content %}
+{#<!-- <div class="container max-w-3xl mx-auto px-4">
   <div class="font-sans py-8">
     <h1 class="font-bold font-sans break-normal text-gray-900 pb-2 text-3xl md:text-4xl">{{ section.title }}</h1>
   </div>
@@ -99,4 +100,4 @@
   </ul>
 
 </div> -->
-{% endblock page_content %}
+#}

@@ -60,35 +60,18 @@
 </head>
 
 <body class="ui container">
-
-  {% include "partials/header.html" %}
+  {% block header %}
+    {% include "partials/header.html" %}
+  {% endblock header %}
 
   {#
   <!-- !FIXME Remover gambiarra da margem -->
   #}
   <!-- Container -->
   <main>
-    {%- block page_title %}
-    <header>
-      <nav>
-        <div class="ui mini breadcrumb">
-          {% if section -%}
-          {{ macros_nav::section_breadcrumbs(section=section) }}
-          {% elif page -%}
-          {{ macros_nav::page_breadcrumbs(page=page) }}
-          {%- endif %}
-        </div>
-      </nav>
-      <h1 style="margin-top: 0.1em;">
-        {%- if section -%}
-        {{ section.title }}
-        {%- elif page -%}
-        {{ page.title }}
-        {%- endif -%}
-      </h1>
-    </header>
-    {% endblock page_title -%}
-
+    {% block page_title %}
+    {% endblock page_title %}
+    
     {%- block page_content %}
     <section>
       {%- if section -%}
