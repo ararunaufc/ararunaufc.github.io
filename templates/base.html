@@ -1,14 +1,14 @@
 {% import 'macros/languages.html' as l10n -%}
 
-{% import 'macros/head.html' as macros_head -%}
-{% import 'macros/nav.html' as macros_nav -%}
-{% import 'macros/macros.html' as macros -%}
-{% import 'macros/icons.html' as icons -%}
-{% import 'macros/images.html' as macros_image -%}
-{% import 'macros/blog.html' as blog -%}
-{% import 'macros/publication.html' as publication -%}
+{% import 'macros/head.html' as macros_head %}
+{% import 'macros/nav.html' as macros_nav %}
+{% import 'macros/macros.html' as macros %}
+{% import 'macros/icons.html' as icons %}
+{% import 'macros/images.html' as macros_image %}
+{% import 'macros/blog.html' as blog %}
+{% import 'macros/publication.html' as publication %}
 
-{% set section = load_data(path=current_path ~ "_index.md", required = false) -%}
+{% set section = load_data(path=current_path ~ "_index.md", required = false) %}
 
 <!DOCTYPE html>
 <html lang="pt">
@@ -22,17 +22,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  {% block head -%}
+  {% block head %}
   <meta charset="utf-8">
 
   {% block fomantic_ui %}
-  {{ macros_head::fomanticui(modules=[]) }}
+    {{ macros_head::fomanticui(modules=[]) }}
   {% endblock %}
   {% block katex %}
-  {{ macros_head::katex(autorender=config.extra.katex_auto_render) }}
+    {{ macros_head::katex(autorender=config.extra.katex_auto_render) }}
   {% endblock %}
 
-  {% block styles -%}
+  {% block styles %}
   <style type="text/css">
     .katex {
       font-size: 1.1em;
@@ -46,17 +46,17 @@
       margin-bottom: 1em;
     }
   </style>
-  {% endblock styles -%}
+  {% endblock styles %}
 
 
-  {% block scripts -%}
-  {% endblock scripts -%}
+  {% block scripts %}
+  {% endblock scripts %}
 
-  {% block title -%}
-  <title>{% if section -%}{{ section.title }} | {% endif %} {{ config.title }}</title>
-  {% endblock title -%}
+  {% block title %}
+    <title>{% if section %}{{ section.title }} | {% endif %} {{ config.title }}</title>
+  {% endblock title %}
 
-  {% endblock head -%}
+  {% endblock head %}
 </head>
 
 <body class="ui container">
@@ -72,15 +72,15 @@
     {% block page_title %}
     {% endblock page_title %}
     
-    {%- block page_content %}
+    {% block page_content %}
     <section>
-      {%- if section -%}
-      {{ section.content | safe }}
-      {%- elif page -%}
-      {{ page.content | safe }}
-      {%- endif -%}
+      {% if section %}
+        {{ section.content | safe }}
+      {% elif page %}
+        {{ page.content | safe }}
+      {% endif %}
     </section>
-    {% endblock page_content -%}
+    {% endblock page_content %}
   </main>
 
   {% block footer %}
