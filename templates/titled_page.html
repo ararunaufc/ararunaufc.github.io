@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% block css_rules %}
+  header#page_header {
+    margin-top: 2.5em;
+    margin-bottom: 2em;
+  }
+{% endblock css_rules %}
+
 {% block page_title %}
   {{ super() }}
   {% include "partials/page_header.html" %}
