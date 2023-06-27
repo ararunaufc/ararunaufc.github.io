@@ -1,16 +1,26 @@
-{% extends "base.html" %}
+{% extends "titled_page.html" %}
 
 {% block nav %}
 {{ macros_nav::top_nav(website_title=config.title, extra_items=config.extra.menu_items, active_item=section.title) }}
 {% endblock nav %}
 
+{% block css_rules %}
+  {{ super() }}
+
+  section.listing {
+     margin-top: 2em;
+  }
+{% endblock css_rules %}
+
 {% block page_content %}
-<div>
+  {% if section.content %}
   <div class="text">
     {{ section.content | safe }}
   </div>
+  {% endif %}
+  
   {% for subsec_path in section.subsections -%}
-  <section style="margin-top: 1.5em;">
+  <section class="listing">
     {% set subsection=get_section(path=subsec_path) %}
     {% set subsection_pages=subsection.pages | length %}
     <header>
@@ -23,27 +33,28 @@
         </div>
       </h1>
     </header>
-    <main class="ui list">
+    <main class="ui bulleted list">
       {% if subsection.pages %}
-      {% for page in subsection.pages | slice(end=3) %}
-      <article class="item">
-        <div class="content">
-          <header class="header"><a href="{{ page.permalink }}">{{ page.title
-              }}</a></header>
-          <div class="description">{{ page.description }}</div>
-        </div>
-      </article>
+        {% for page in subsection.pages | slice(end=3) %}
+        <article class="item">
+          <div class="content">
+            <header class="header"><a href="{{ page.permalink }}">{{ page.title
+                }}</a></header>
+            <div class="description">{{ page.description }}</div>
+          </div>
+        </article>
       {% endfor %}
-      <hr class="ui hidden divider">
-      <div class="item"><a href="{{ subsection.permalink }}">Ver
-          todas as entradas</a></div>
       {% else %}
       <em>&mdash; (Nenhum projeto nesta seção)</em>
       {%- endif %}
     </main>
+    {% if subsection_pages > 3 %}
+    <a class="ui tertiary button" href="{{ subsection.permalink }}"><i class="grip vertical icon"></i>Ver
+        todas as entradas</a>
+    {% endif %}
   </section>
   {%- endfor %}
-</div>
+{% endblock page_content %}
 <!-- <div class="container max-w-3xl mx-auto px-4">
   <header>
     <div class="font-sans py-8">
@@ -111,4 +122,3 @@
     </ul>
   </main>
 </div> -->
-{% endblock page_content %}
