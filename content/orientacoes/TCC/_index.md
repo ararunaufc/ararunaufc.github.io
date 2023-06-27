@@ -1,7 +1,7 @@
 +++
 title = "Trabalho de Conclusão de Curso"
-template = "academic-advisories.html"
-page_template = "advisory-page.html"
+template = "academic-advising.html"
+page_template = "academic-advising-details.html"
 sort_by = "weight"
 updated = "2022-04-21"
 
