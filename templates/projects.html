@@ -6,14 +6,12 @@
 {{ macros_nav::top_nav(website_title=config.title, extra_items=config.extra.menu_items, active_item=section.title) }}
 {% endblock nav %}
 
-{% block styles %}
-{{ super() }}
-<style type="text/css">
+{% block css_rules %}
+  {{ super() }}
   [data-custom-cursor="help"i] {
     cursor: help;
   }
-</style>
-{% endblock styles %}
+{% endblock css_rules %}
 
 {% block page_content %}
 <section class="ui basic segment">
