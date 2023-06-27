@@ -32,7 +32,7 @@
       {% if category.children -%}
       {% for subcat in category.children -%}
       <section>
-        <h2>{{subcat.title}}</h2>
+        <h2 class="ui small header">{{subcat.title}}</h2>
         <ul>
           {% for entry in subcat.entries -%}
           <li>{{ entry }}</li>
