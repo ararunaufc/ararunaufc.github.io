@@ -10,39 +10,48 @@ title = "Ensino"
 id = "ensino"
 
   [[extra.categories.children]]
-  title = "2022.1"
+  title = "QXD0010 - Estrutura de Dados"
   entries = [
-  "QXD0115 - Estrutura de Dados Avançada - T01A",
-  "QXD0041 - Projeto e Análise de Algoritmos - T01A"
+  "2019.2 (T01A)",
+  "2020.1 (T02A)"
 ]
 
   [[extra.categories.children]]
-  title = "2021.2"
+  title = "QXD0115 - Estrutura de Dados Avançada"
   entries = [
-  "QXD0008 - Matemática Discreta - T01",
-  "QXD0008 - Matemática Discreta - T02"
+  "2022.1 (T01A)",
 ]
 
   [[extra.categories.children]]
-  title = "2020.1"
+  title = "QXD0008 - Matemática Discreta"
   entries = [
-  "QXD0010 - Estrutura de Dados - T02A",
-  "QXD0007 - Programação Orientada a Objetos - T01A"
+  '2019.1 (T06)',
+  "2019.2 (T04)",
+  "2021.2 (T01, T02)",
 ]
 
   [[extra.categories.children]]
-  title = "2019.2"
+  title = "QXD0041 - Projeto e Análise de Algoritmos"
   entries = [
-  "QXD0010 - Estrutura de Dados - T01A",
-  "QXD0008 - Matemática Discreta - T04"
+  "2022.1 (T01A)"
 ]
 
   [[extra.categories.children]]
-  title = "2019.1"
+  title = "QXD0152 - Teoria dos Grafos"
   entries = [
-  "QXD0008 - Matemática Discreta - T06",
-  "QXD0025 - Compiladores - T02A",
-  "QXD0152 - Teoria dos Grafos - T02"
+  "2019.1 (T02)"
+]
+
+  [[extra.categories.children]]
+  title = "QXD0025 - Compiladores"
+  entries = [
+  "2019.1 (T02A)"
+]
+
+  [[extra.categories.children]]
+  title = "QXD0007 - Programação Orientada a Objetos"
+  entries = [
+  "2020.1 (T01A)"
 ]
 
 [[extra.categories]]
