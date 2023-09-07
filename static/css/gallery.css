@@ -3,7 +3,8 @@
 }
 
 .gallery .gallery-controls {
-  display: flex;
+  display: none;
+  /*display: flex;*/
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
