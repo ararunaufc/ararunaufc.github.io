@@ -20,12 +20,13 @@
 {% block styles %}
 {{ super() }}
 {% if page.extra.render_gallery is defined %}
-{{ macros_image::gallery_styles() }}
+{{ macros_image::gallery_style() }}
 {% endif %}
 {% endblock styles %}
 
 {% block page_content %}
 <section>
+  <h2>Dados</h2>
   <table class="ui definition table">
     <tbody>
       <tr>
@@ -51,8 +52,14 @@
 {{ super() }}
 {% if page.extra.render_gallery %}
 <section>
-  <h2 class="ui header">Imagens</h2>
-  {# macros_image::gallery(page=page, gallery=page.extra.render_gallery) #}
+  <h2>Recursos</h2>
+  <section class="files">
+    <h3>Arquivos</h3>
+  </section>
+  <section class="gallery">
+    <h3>Galeria</h3>
+    {{ macros_image::gallery_content(page=page, gallery=page.extra.render_gallery) }}
+  </section>
 </section>
 {% endif %}
 {% endblock page_content %}
