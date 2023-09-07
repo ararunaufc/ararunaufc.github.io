@@ -1,7 +1,6 @@
 +++
 title = "Sistema de PaaS econômico em recursos"
 description = 'Sistemas de Platform as a Service (PaaS) atuais como sistemas de Continuous Integration (CI), por exemplo, tendem a ser pouco eficientes quanto ao uso de disco e rede, o que também se traduz em ineficiência de tempo e energia. Isso acontece por que muitos deles tendem a reconfigurar do zero todas as instâncias de contêineres sempre que uma é solicitada. Este projeto visa avaliar essa situação e porpor soluções mais econômicas para alcançar os mesmos objetivos das alternativas atuais.'
-weight = 20
 date = 2022-01-01
 updated = "2022-04-28"
 draft = true

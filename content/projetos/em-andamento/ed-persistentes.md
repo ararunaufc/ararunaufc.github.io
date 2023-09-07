@@ -2,8 +2,6 @@
 title = "Estruturas de Dados Persistentes"
 description = "Estudo de Estruturas de Dados Persistentes (Temporais) e proposição de técnicas e organizações alternativas para suas implementações."
 
-weight = 8
-
 date = 2022-01-01
 updated = "2022-04-21"
 

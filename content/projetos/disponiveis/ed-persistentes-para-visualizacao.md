@@ -2,8 +2,6 @@
 title = "Estruturas de Dados Persistentes e Visualização de Algoritmos"
 description = "Estudo de Estruturas de Dados Persistentes (Temporais) para posterior implementação de um visualizador gráfico de estruturas de dados. Esse visualizador deve ser usado como auxiliar no ensino de conteúdos para as disciplinas de ED e EDA."
 
-weight = 8
-
 date = 2022-01-01
 updated = "2022-04-21"
 

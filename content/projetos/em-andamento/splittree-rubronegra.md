@@ -1,7 +1,6 @@
 +++
 title = "Árvore Split baseada em árvores Rubro-Negras"
 description = 'Uma Árvore Split é uma árvore binária de busca que admite uma operação Split ser realizada em tempo amortizado O(1). A operação Split(T, x) reorganiza T de forma que sua nova raiz seja x, caso x pertença a T, ou um entre o sucessor e o predecessor de x em T, caso contrário. Este projeto visa propor uma Árvore Split baseada em árvores Rubro-Negras.'
-weight = 0
 date = 2022-01-01
 updated = "2022-04-28"
 

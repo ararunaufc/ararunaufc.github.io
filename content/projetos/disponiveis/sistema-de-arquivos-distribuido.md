@@ -1,7 +1,6 @@
 +++
 title = "Sistema de arquivos distribuído para redes locais"
 description = 'A depender da infraestrutura disponível e do tipo de atividade desempenhada por um grupo de profissionais, é interessante fazer uso de todos os recursos de hardware disponíveis de forma a economizar equipamentos ou recursos financeiros. Uma alternativa no âmbito de armazenamento é distribuir os arquivos de todos os usuários de uma rede local nas próprias máquinas usadas, reservando uma parte do espaço de armazenamento dessas máquinas para compor um sistema de arquivos distribuído. Este projeto visa propor um sistema de gerenciamento desses dados.'
-weight = 20
 date = 2022-01-01
 updated = "2022-04-28"
 

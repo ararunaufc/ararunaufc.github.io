@@ -1,7 +1,6 @@
 +++
 title = "Sistema de gestão e avaliação automática de tarefas de programação"
 description = 'Para linguagens que gerenciam memória de maneira automática, geralmente uma das tarefas do compilador, na intenção de otimizar o uso de memória, é decidir se os dados referenciados por uma variável devem residir no heap ou na pilha de execução. Para isso, é necessário detectar se, por assim dizer, aqueles dados podem ou não ser compartilhados entre funções com tempo de vida distintos, o que chamamos de "Análise de escape". Este projeto visa estudar e avaliar as soluções já propostas para esse fim.'
-weight = 15
 date = 2022-01-01
 updated = "2022-04-23"
 

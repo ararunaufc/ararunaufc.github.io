@@ -4,7 +4,6 @@ description = "Investigação, estudo, curadoria e proposição de técnicas e p
 date = 2023-09-06
 updated = "2023-09-06"
 
-weight = 15
 draft = true
 
 [taxonomies]
