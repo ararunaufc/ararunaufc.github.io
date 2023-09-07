@@ -2,7 +2,7 @@
 title = "Pontos de fricção em Linguagens de Programação modernas"
 description = "Investigação de Linguagens de Programação de propósito geral modernas, tanto de adoção expressiva como em ascenção, com o foco em identificar quais de suas dimensões causam fricção ou dificuldades em seu uso. O espectro de análise visa envolver sintaxe, semântica, facilidade de aprendizagem, manutenção de código, ecossistema, etc. de forma a obter-se um panorama das desvantagens das opções modernas e trazer luz a essas questões."
 date = 2022-01-01
-updated = "2022-04-23"
+updated = 2022-04-23
 
 [taxonomies]
 area = [ "Linguagens de Programação", "Interação Humano-Computador" ]

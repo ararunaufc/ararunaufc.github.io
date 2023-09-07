@@ -2,7 +2,7 @@
 title = "Desamortização de Árvores Binárias de Busca"
 description = "Estudo e implementação da solução de desamortização de ABBs proposta por [Bose et al., 2012]."
 date = 2022-01-01
-updated = "2022-04-23"
+updated = 2022-04-23
 
 [taxonomies]
 area = [ "Estruturas de Dados", "Algoritmos" ]

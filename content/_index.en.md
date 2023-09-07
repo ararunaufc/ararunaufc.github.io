@@ -1,5 +1,5 @@
 +++
-updated = "2022-04-21"
+updated = 2022-04-21
 
 [extra]
 title = "Professor and Researcher at UFC Quixadá"

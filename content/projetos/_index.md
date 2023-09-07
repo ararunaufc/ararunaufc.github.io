@@ -3,7 +3,7 @@ title = "Projetos"
 template = "section-summary.html"
 page_template = "project-page.html"
 sort_by = "weight"
-updated = "2022-04-24"
+updated = 2022-04-24
 weight = 10
 
 [extra]

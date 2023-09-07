@@ -2,7 +2,7 @@
 title = "Ferramentas e práticas para ABIs resilientes"
 description = "Investigação, estudo, curadoria e proposição de técnicas e padrões de organização de ABIs para mitigar questões de quebra."
 date = 2023-09-06
-updated = "2023-09-06"
+updated = 2023-09-06
 
 draft = true
 

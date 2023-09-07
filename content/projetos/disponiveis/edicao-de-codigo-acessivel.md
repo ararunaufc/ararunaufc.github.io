@@ -3,7 +3,7 @@ title = "Edição de código acessível a deficientes visuais"
 description = "Estudar e propor ferramentas para auxiliar a tarefa de leitura e escrita de código por pessoas programadoras portadoras de deficiência visual, com foco em enriquecer a experiência proporcionada por essas ferramentas."
 
 date = 2022-01-01
-updated = "2022-04-21"
+updated = 2022-04-21
 
 [taxonomies]
 area = [ "Compiladores", "Interação Humano-Computador", ]
