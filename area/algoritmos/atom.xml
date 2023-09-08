@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt">
+    <title>Prof. Arthur Araruna - Algoritmos</title>
+    <subtitle>Informações profissionais sobre o Prof. Arthur Araruna do Campus de Quixadá da Universidade Federal do Ceará.</subtitle>
+    <link href="https://araruna.science/area/algoritmos/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://araruna.science"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-04-23T00:00:00+00:00</updated>
+    <id>https://araruna.science/area/algoritmos/atom.xml</id>
+    <entry xml:lang="pt">
+        <title>Sistema de gestão e avaliação automática de tarefas de programação</title>
+        <published>2022-01-01T00:00:00+00:00</published>
+        <updated>2022-04-23T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/projetos/disponiveis/avaliacao-automatica-programacao/" type="text/html"/>
+        <id>https://araruna.science/projetos/disponiveis/avaliacao-automatica-programacao/</id>
+        
+        <content type="html">&lt;h2 id=&quot;nivel-academico-compativel&quot;&gt;Nível acadêmico compatível&lt;&#x2F;h2&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;descricao&quot;&gt;Descrição&lt;&#x2F;h2&gt;
+&lt;p&gt;Para linguagens que gerenciam memória de maneira automática, geralmente uma das tarefas do compilador, na intenção de otimizar o uso de memória, é decidir se os dados referenciados por uma variável devem residir no heap ou na pilha de execução. Para isso, é necessário detectar se, por assim dizer, aqueles dados podem ou não ser compartilhados entre funções com tempo de vida distintos, o que chamamos de &amp;quot;Análise de escape&amp;quot;.&lt;&#x2F;p&gt;
+&lt;p&gt;Este projeto visa estudar e avaliar as soluções já propostas para esse fim.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;possiveis-atividades&quot;&gt;Possíveis Atividades&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Investigar publicações sobre o tema&lt;&#x2F;li&gt;
+&lt;li&gt;Investigar publicações com comparativos entre soluções&lt;&#x2F;li&gt;
+&lt;li&gt;Implementação e validação ou comparação de soluções&lt;&#x2F;li&gt;
+&lt;li&gt;Identificar fatores determinantes dos algoritmos ou das semânticas de linguagem para a eficiência das soluções&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;escopo&quot;&gt;Escopo&lt;&#x2F;h2&gt;
+&lt;p&gt;{% ui_message(type=“warning”)) %}
+O escopo definitivo do trabalho ainda não está definido.
+{% end %}&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conhecimento&quot;&gt;Conhecimento&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;cursos-desejaveis&quot;&gt;Cursos desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;Os cursos a seguir são os que têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.&lt;&#x2F;div&gt;
+&lt;ol&gt;
+&lt;li&gt;Ciência da Computação&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;disciplinas-desejaveis&quot;&gt;Disciplinas desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.&lt;&#x2F;div&gt;
+&lt;ul&gt;
+&lt;li&gt;Compiladores&lt;&#x2F;li&gt;
+&lt;li&gt;Linguagens Formais e Autômatos&lt;&#x2F;li&gt;
+&lt;li&gt;Estrutura de Dados Avançada&lt;&#x2F;li&gt;
+&lt;li&gt;Projeto e Análise de Algoritmos&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Desamortização de Árvores Binárias de Busca</title>
+        <published>2022-01-01T00:00:00+00:00</published>
+        <updated>2022-04-23T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/projetos/disponiveis/desamortizacao-abbs/" type="text/html"/>
+        <id>https://araruna.science/projetos/disponiveis/desamortizacao-abbs/</id>
+        
+        <content type="html">&lt;h2 id=&quot;nivel-academico-compativel&quot;&gt;Nível acadêmico compatível&lt;&#x2F;h2&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;descricao&quot;&gt;Descrição&lt;&#x2F;h2&gt;
+&lt;p&gt;Estudo e implementação da solução de desamortização de ABBs proposta por [Bose et al., 2012]. Consiste em simular buscas (e portencialmente alterações) no modelo de BST de computação em árvores binárias de busca de forma a alcançar complexidade de pior caso da mesma ordem obtida originalmente de maneira amortizada.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pt.wikipedia.org&#x2F;wiki&#x2F;An%C3%A1lise_amortizada&quot;&gt;Complexidade Amortizada&lt;&#x2F;a&gt; é uma medida de complexidade que observa sequências de operações e, de maneira simplificada, nos permite uma nova ótica de complexidade para cada uma dessas operações.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;atividades&quot;&gt;Atividades&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Estudar artigo que propõe a solução&lt;&#x2F;li&gt;
+&lt;li&gt;Implementar, em linguagem de sistemas, a solução proposta&lt;&#x2F;li&gt;
+&lt;li&gt;Analisar implementação&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;nao-escopo&quot;&gt;Não-escopo&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;em&gt;Em princípio&lt;&#x2F;em&gt;, não faz parte do escopo deste projeto:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Propor alterações na solução descrita no algoritmo&lt;&#x2F;li&gt;
+&lt;li&gt;Propor soluções alternativas&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;conhecimento&quot;&gt;Conhecimento&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;cursos-desejaveis&quot;&gt;Cursos desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;Os cursos a seguir são os que têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.&lt;&#x2F;div&gt;
+&lt;ol&gt;
+&lt;li&gt;Ciência da Computação&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;disciplinas-desejaveis&quot;&gt;Disciplinas desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.&lt;&#x2F;div&gt;
+&lt;ul&gt;
+&lt;li&gt;Compiladores&lt;&#x2F;li&gt;
+&lt;li&gt;Linguagens Formais e Autômatos&lt;&#x2F;li&gt;
+&lt;li&gt;Estrutura de Dados Avançada&lt;&#x2F;li&gt;
+&lt;li&gt;Projeto e Análise de Algoritmos&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+</feed>

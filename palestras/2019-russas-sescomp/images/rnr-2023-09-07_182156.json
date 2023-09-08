@@ -1,0 +1,17 @@
+{
+  "date": "2023-09-07 18:21:56",
+  "operations": [
+    {
+      "source": "picture-3.jpg",
+      "target": "3.jpg"
+    },
+    {
+      "source": "picture-2.jpg",
+      "target": "2.jpg"
+    },
+    {
+      "source": "picture-1.jpg",
+      "target": "1.jpg"
+    }
+  ]
+}

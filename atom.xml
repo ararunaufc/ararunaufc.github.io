@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt">
+    <title>Prof. Arthur Araruna</title>
+    <subtitle>Informações profissionais sobre o Prof. Arthur Araruna do Campus de Quixadá da Universidade Federal do Ceará.</subtitle>
+    <link href="https://araruna.science/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://araruna.science"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-04-28T00:00:00+00:00</updated>
+    <id>https://araruna.science/atom.xml</id>
+    <entry xml:lang="pt">
+        <title>Sistema de gestão e avaliação automática de tarefas de programação</title>
+        <published>2022-01-01T00:00:00+00:00</published>
+        <updated>2022-04-23T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/projetos/disponiveis/avaliacao-automatica-programacao/" type="text/html"/>
+        <id>https://araruna.science/projetos/disponiveis/avaliacao-automatica-programacao/</id>
+        
+        <content type="html">&lt;h2 id=&quot;nivel-academico-compativel&quot;&gt;Nível acadêmico compatível&lt;&#x2F;h2&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;descricao&quot;&gt;Descrição&lt;&#x2F;h2&gt;
+&lt;p&gt;Para linguagens que gerenciam memória de maneira automática, geralmente uma das tarefas do compilador, na intenção de otimizar o uso de memória, é decidir se os dados referenciados por uma variável devem residir no heap ou na pilha de execução. Para isso, é necessário detectar se, por assim dizer, aqueles dados podem ou não ser compartilhados entre funções com tempo de vida distintos, o que chamamos de &amp;quot;Análise de escape&amp;quot;.&lt;&#x2F;p&gt;
+&lt;p&gt;Este projeto visa estudar e avaliar as soluções já propostas para esse fim.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;possiveis-atividades&quot;&gt;Possíveis Atividades&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Investigar publicações sobre o tema&lt;&#x2F;li&gt;
+&lt;li&gt;Investigar publicações com comparativos entre soluções&lt;&#x2F;li&gt;
+&lt;li&gt;Implementação e validação ou comparação de soluções&lt;&#x2F;li&gt;
+&lt;li&gt;Identificar fatores determinantes dos algoritmos ou das semânticas de linguagem para a eficiência das soluções&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;escopo&quot;&gt;Escopo&lt;&#x2F;h2&gt;
+&lt;p&gt;{% ui_message(type=“warning”)) %}
+O escopo definitivo do trabalho ainda não está definido.
+{% end %}&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conhecimento&quot;&gt;Conhecimento&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;cursos-desejaveis&quot;&gt;Cursos desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;Os cursos a seguir são os que têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.&lt;&#x2F;div&gt;
+&lt;ol&gt;
+&lt;li&gt;Ciência da Computação&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;disciplinas-desejaveis&quot;&gt;Disciplinas desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.&lt;&#x2F;div&gt;
+&lt;ul&gt;
+&lt;li&gt;Compiladores&lt;&#x2F;li&gt;
+&lt;li&gt;Linguagens Formais e Autômatos&lt;&#x2F;li&gt;
+&lt;li&gt;Estrutura de Dados Avançada&lt;&#x2F;li&gt;
+&lt;li&gt;Projeto e Análise de Algoritmos&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Pontos de fricção em Linguagens de Programação modernas</title>
+        <published>2022-01-01T00:00:00+00:00</published>
+        <updated>2022-04-23T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/projetos/disponiveis/deficiencias-de-ling-modernas/" type="text/html"/>
+        <id>https://araruna.science/projetos/disponiveis/deficiencias-de-ling-modernas/</id>
+        
+        <content type="html">&lt;h2 id=&quot;nivel-academico-compativel&quot;&gt;Nível acadêmico compatível&lt;&#x2F;h2&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;descricao&quot;&gt;Descrição&lt;&#x2F;h2&gt;
+&lt;p&gt;Investigação de Linguagens de Programação de propósito geral modernas, tanto de adoção expressiva como em ascenção, com o foco em identificar quais de suas dimensões causam fricção ou dificuldades em seu uso. O espectro de análise visa envolver sintaxe, semântica, facilidade de aprendizagem, manutenção de código, ecossistema, etc. de forma a obter-se um panorama das desvantagens das opções modernas e trazer luz a essas questões.&lt;&#x2F;p&gt;
+&lt;p&gt;Linguagens clássicas mas ainda de grande adoção também podem entrar no escopo.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;possiveis-atividades&quot;&gt;Possíveis Atividades&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Investigar publicações de objetivos semelhantes&lt;&#x2F;li&gt;
+&lt;li&gt;Investigar espaços comunitários das linguagens&lt;&#x2F;li&gt;
+&lt;li&gt;Investigar publicações sobre essas temáticas&lt;&#x2F;li&gt;
+&lt;li&gt;Investigar publicações com comparativos entre linguagens&lt;&#x2F;li&gt;
+&lt;li&gt;Análise de discursos&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;escopo&quot;&gt;Escopo&lt;&#x2F;h2&gt;
+&lt;p&gt;O escopo definitivo do trabalho ainda não está definido.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Linguagens de interesse do mercado de desenvolvimento de software e sistemas&lt;&#x2F;li&gt;
+&lt;li&gt;Linguagens Imperativas ou principalmente imperativas&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;nao-escopo&quot;&gt;Não-escopo&lt;&#x2F;h2&gt;
+&lt;p&gt;Não faz parte do escopo &lt;em&gt;deste&lt;&#x2F;em&gt; projeto:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Propor soluções para as deficiências encontradas&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;conhecimento&quot;&gt;Conhecimento&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;cursos-desejaveis&quot;&gt;Cursos desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;Os cursos a seguir são os que têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.&lt;&#x2F;div&gt;
+&lt;ol&gt;
+&lt;li&gt;Engenharia de Software&lt;&#x2F;li&gt;
+&lt;li&gt;Ciência da Computação&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;disciplinas-desejaveis&quot;&gt;Disciplinas desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.&lt;&#x2F;div&gt;
+&lt;ul&gt;
+&lt;li&gt;Linguagens de Programação&lt;&#x2F;li&gt;
+&lt;li&gt;Engenharia de Software&lt;&#x2F;li&gt;
+&lt;li&gt;Interação Humano-Computador&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Desamortização de Árvores Binárias de Busca</title>
+        <published>2022-01-01T00:00:00+00:00</published>
+        <updated>2022-04-23T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/projetos/disponiveis/desamortizacao-abbs/" type="text/html"/>
+        <id>https://araruna.science/projetos/disponiveis/desamortizacao-abbs/</id>
+        
+        <content type="html">&lt;h2 id=&quot;nivel-academico-compativel&quot;&gt;Nível acadêmico compatível&lt;&#x2F;h2&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;descricao&quot;&gt;Descrição&lt;&#x2F;h2&gt;
+&lt;p&gt;Estudo e implementação da solução de desamortização de ABBs proposta por [Bose et al., 2012]. Consiste em simular buscas (e portencialmente alterações) no modelo de BST de computação em árvores binárias de busca de forma a alcançar complexidade de pior caso da mesma ordem obtida originalmente de maneira amortizada.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pt.wikipedia.org&#x2F;wiki&#x2F;An%C3%A1lise_amortizada&quot;&gt;Complexidade Amortizada&lt;&#x2F;a&gt; é uma medida de complexidade que observa sequências de operações e, de maneira simplificada, nos permite uma nova ótica de complexidade para cada uma dessas operações.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;atividades&quot;&gt;Atividades&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Estudar artigo que propõe a solução&lt;&#x2F;li&gt;
+&lt;li&gt;Implementar, em linguagem de sistemas, a solução proposta&lt;&#x2F;li&gt;
+&lt;li&gt;Analisar implementação&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;nao-escopo&quot;&gt;Não-escopo&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;em&gt;Em princípio&lt;&#x2F;em&gt;, não faz parte do escopo deste projeto:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Propor alterações na solução descrita no algoritmo&lt;&#x2F;li&gt;
+&lt;li&gt;Propor soluções alternativas&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;conhecimento&quot;&gt;Conhecimento&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;cursos-desejaveis&quot;&gt;Cursos desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;Os cursos a seguir são os que têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.&lt;&#x2F;div&gt;
+&lt;ol&gt;
+&lt;li&gt;Ciência da Computação&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;disciplinas-desejaveis&quot;&gt;Disciplinas desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.&lt;&#x2F;div&gt;
+&lt;ul&gt;
+&lt;li&gt;Compiladores&lt;&#x2F;li&gt;
+&lt;li&gt;Linguagens Formais e Autômatos&lt;&#x2F;li&gt;
+&lt;li&gt;Estrutura de Dados Avançada&lt;&#x2F;li&gt;
+&lt;li&gt;Projeto e Análise de Algoritmos&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Estruturas de Dados Persistentes e Visualização de Algoritmos</title>
+        <published>2022-01-01T00:00:00+00:00</published>
+        <updated>2022-04-21T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/projetos/disponiveis/ed-persistentes-para-visualizacao/" type="text/html"/>
+        <id>https://araruna.science/projetos/disponiveis/ed-persistentes-para-visualizacao/</id>
+        
+        <content type="html">&lt;h2 id=&quot;nivel-academico-compativel&quot;&gt;Nível acadêmico compatível&lt;&#x2F;h2&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;descricao&quot;&gt;Descrição&lt;&#x2F;h2&gt;
+&lt;p&gt;Estudo de Estruturas de Dados Persistentes (Temporais) para posterior implementação de um visualizador gráfico de estruturas de dados. Esse visualizador deve ser usado como auxiliar no ensino de conteúdos para as disciplinas de ED e EDA, com foco no &lt;em&gt;Campus&lt;&#x2F;em&gt; da UFC em Quixadá.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;possiveis-atividades&quot;&gt;Possíveis Atividades&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Investigar literatura da área&lt;&#x2F;li&gt;
+&lt;li&gt;Entender restrições e necessidades do escopo de uso&lt;&#x2F;li&gt;
+&lt;li&gt;Buscar descrições eficientes das estruturas vistas nas disciplinas&lt;&#x2F;li&gt;
+&lt;li&gt;Planejar e implementar ferramenta gráfica&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;escopo&quot;&gt;Escopo&lt;&#x2F;h2&gt;
+&lt;div class=&quot;ui info message&quot;&gt;Cada seção de escopo a seguir representa um trabalho distinto que pode ser derivado deste projeto.&lt;&#x2F;div&gt;&lt;div class=&quot;ui warning message&quot;&gt;O escopo definitivo do projeto ainda não está definido.&lt;&#x2F;div&gt;&lt;h3 id=&quot;visualizacao-de-execucao&quot;&gt;Visualização de execução&lt;&#x2F;h3&gt;
+&lt;p&gt;Fazer uso de &lt;em&gt;persistência parcial&lt;&#x2F;em&gt; para:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Permitir visualização das alterações realizadas pela implementação fornecida.&lt;&#x2F;li&gt;
+&lt;li&gt;Permitir navegação sobre a evolução das alterações.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;visualizacao-de-funcionamento&quot;&gt;Visualização de funcionamento&lt;&#x2F;h3&gt;
+&lt;p&gt;Fazer uso de &lt;em&gt;persistência total&lt;&#x2F;em&gt; para:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Permitir visualização do funcionamento correto de um algoritmo.&lt;&#x2F;li&gt;
+&lt;li&gt;Permitir interação com algoritmos, obtendo entradas fornecidas pelo usuário.&lt;&#x2F;li&gt;
+&lt;li&gt;Permitir navegação sobre a evolução das alterações.&lt;&#x2F;li&gt;
+&lt;li&gt;Permitir observação do comportamento gerado por sequência alternativa de operações, realizadas a partir de um ponto anterior na evolução.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;nao-escopo&quot;&gt;Não-escopo&lt;&#x2F;h2&gt;
+&lt;p&gt;Não faz parte do escopo &lt;em&gt;deste&lt;&#x2F;em&gt; projeto:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Propor algoritmos alternativos para gerir estruturas temporais&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;conhecimento&quot;&gt;Conhecimento&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;cursos-desejaveis&quot;&gt;Cursos desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;Os cursos a seguir são os que têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.&lt;&#x2F;div&gt;
+&lt;ol&gt;
+&lt;li&gt;Ciência da Computação&lt;&#x2F;li&gt;
+&lt;li&gt;Engenharia de Software&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;disciplinas-desejaveis&quot;&gt;Disciplinas desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.&lt;&#x2F;div&gt;
+&lt;ul&gt;
+&lt;li&gt;Estrutura de Dados Avançada&lt;&#x2F;li&gt;
+&lt;li&gt;Projeto e Análise de Algoritmos&lt;&#x2F;li&gt;
+&lt;li&gt;Interação Humano-Computador&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Edição de código acessível a deficientes visuais</title>
+        <published>2022-01-01T00:00:00+00:00</published>
+        <updated>2022-04-21T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/projetos/disponiveis/edicao-de-codigo-acessivel/" type="text/html"/>
+        <id>https://araruna.science/projetos/disponiveis/edicao-de-codigo-acessivel/</id>
+        
+        <content type="html">&lt;h2 id=&quot;nivel-academico-compativel&quot;&gt;Nível acadêmico compatível&lt;&#x2F;h2&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;descricao&quot;&gt;Descrição&lt;&#x2F;h2&gt;
+&lt;p&gt;Estudar e propor ferramentas para auxiliar a tarefa de leitura e escrita de código por pessoas programadoras portadoras de deficiência visual, com foco em enriquecer a experiência proporcionada por essas ferramentas.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;possiveis-atividades&quot;&gt;Possíveis Atividades&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Entrevistar pessoas programadoras portadoras de deficiência visual em sua atuação profissional&lt;&#x2F;li&gt;
+&lt;li&gt;Investigar ferramentas disponíveis&lt;&#x2F;li&gt;
+&lt;li&gt;Desenvolver ou adaptar ferramenta para melhor auxiliar a atividade de escrita e leitura de código&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;escopo&quot;&gt;Escopo&lt;&#x2F;h2&gt;
+&lt;p&gt;{% ui_message(type=“warning”)) %}
+O escopo definitivo do trabalho ainda não está definido.
+{% end %}&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Propor ferramentas e funcionalidades para reduzir dificuldades na atuação profissional dessa população&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;conhecimento&quot;&gt;Conhecimento&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;cursos-desejaveis&quot;&gt;Cursos desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;Os cursos a seguir são os que têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.&lt;&#x2F;div&gt;
+&lt;ol&gt;
+&lt;li&gt;Engenharia de Software&lt;&#x2F;li&gt;
+&lt;li&gt;Ciência da Computação&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;disciplinas-desejaveis&quot;&gt;Disciplinas desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.&lt;&#x2F;div&gt;
+&lt;ul&gt;
+&lt;li&gt;Estrutura de Dados Avançada&lt;&#x2F;li&gt;
+&lt;li&gt;Compiladores&lt;&#x2F;li&gt;
+&lt;li&gt;Interação Humano-Computador&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Algoritmos de detecção de escape de variáveis</title>
+        <published>2022-01-01T00:00:00+00:00</published>
+        <updated>2022-04-23T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/projetos/disponiveis/escape-de-variaveis/" type="text/html"/>
+        <id>https://araruna.science/projetos/disponiveis/escape-de-variaveis/</id>
+        
+        <content type="html">&lt;h2 id=&quot;nivel-academico-compativel&quot;&gt;Nível acadêmico compatível&lt;&#x2F;h2&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;descricao&quot;&gt;Descrição&lt;&#x2F;h2&gt;
+&lt;p&gt;Para linguagens que gerenciam memória de maneira automática, geralmente uma das tarefas do compilador, na intenção de otimizar o uso de memória, é decidir se os dados referenciados por uma variável devem residir no heap ou na pilha de execução. Para isso, é necessário detectar se, por assim dizer, aqueles dados podem ou não ser compartilhados entre funções com tempo de vida distintos, o que chamamos de &amp;quot;Análise de escape&amp;quot;.&lt;&#x2F;p&gt;
+&lt;p&gt;Este projeto visa estudar e avaliar as soluções já propostas para esse fim.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;possiveis-atividades&quot;&gt;Possíveis Atividades&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Investigar publicações sobre o tema&lt;&#x2F;li&gt;
+&lt;li&gt;Investigar publicações com comparativos entre soluções&lt;&#x2F;li&gt;
+&lt;li&gt;Implementação e validação ou comparação de soluções&lt;&#x2F;li&gt;
+&lt;li&gt;Identificar fatores determinantes dos algoritmos ou das semânticas de linguagem para a eficiência das soluções&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;escopo&quot;&gt;Escopo&lt;&#x2F;h2&gt;
+&lt;p&gt;{% ui_message(type=“warning”)) %}
+O escopo definitivo do trabalho ainda não está definido.
+{% end %}&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conhecimento&quot;&gt;Conhecimento&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;cursos-desejaveis&quot;&gt;Cursos desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;Os cursos a seguir são os que têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.&lt;&#x2F;div&gt;
+&lt;ol&gt;
+&lt;li&gt;Ciência da Computação&lt;&#x2F;li&gt;
+&lt;li&gt;Engenharia de Software&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;disciplinas-desejaveis&quot;&gt;Disciplinas desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.&lt;&#x2F;div&gt;
+&lt;ul&gt;
+&lt;li&gt;Estrutura de Dados Avançada&lt;&#x2F;li&gt;
+&lt;li&gt;Projeto e Análise de Algoritmos&lt;&#x2F;li&gt;
+&lt;li&gt;Compiladores&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Sistema de arquivos distribuído para redes locais</title>
+        <published>2022-01-01T00:00:00+00:00</published>
+        <updated>2022-04-28T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/projetos/disponiveis/sistema-de-arquivos-distribuido/" type="text/html"/>
+        <id>https://araruna.science/projetos/disponiveis/sistema-de-arquivos-distribuido/</id>
+        
+        <content type="html">&lt;h2 id=&quot;nivel-academico-compativel&quot;&gt;Nível acadêmico compatível&lt;&#x2F;h2&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;descricao&quot;&gt;Descrição&lt;&#x2F;h2&gt;
+&lt;p&gt;A depender da infraestrutura disponível e do tipo de atividade desempenhada por um grupo de profissionais, é interessante fazer uso de todos os recursos de hardware disponíveis de forma a economizar equipamentos ou recursos financeiros. Uma solução no âmbito de armazenamento é distribuir os arquivos de todos os usuários de uma rede local nas próprias máquinas usadas, reservando-se uma parte do espaço de armazenamento dessas máquinas para compor um sistema de arquivos distribuído.&lt;&#x2F;p&gt;
+&lt;p&gt;Este projeto visa propor um sistema de gerenciamento desses dados levando em consideração pontos como confiabilidade, disponibilidade e segurança, de forma a se obter um sistema de aplicabilidade prática.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;possiveis-atividades&quot;&gt;Possíveis Atividades&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Investigar publicações sobre o tema&lt;&#x2F;li&gt;
+&lt;li&gt;Investigar arquiteturas das soluções existentes&lt;&#x2F;li&gt;
+&lt;li&gt;Investigar publicações com comparativos entre soluções&lt;&#x2F;li&gt;
+&lt;li&gt;Desenho de alternativa às soluções existentes&lt;&#x2F;li&gt;
+&lt;li&gt;Implementação de protótipo&lt;&#x2F;li&gt;
+&lt;li&gt;Avaliação empírica da solução proposta&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;escopo&quot;&gt;Escopo&lt;&#x2F;h2&gt;
+&lt;p&gt;{% ui_message(type=“warning”)) %}
+O escopo definitivo do trabalho ainda não está definido.
+{% end %}&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;nao-escopo&quot;&gt;Não-escopo&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;em&gt;Em princípio&lt;&#x2F;em&gt;, não faz parte do escopo deste projeto:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Considerar casos de uso em larga-escala.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;conhecimento&quot;&gt;Conhecimento&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;cursos-desejaveis&quot;&gt;Cursos desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;Os cursos a seguir são os que têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.&lt;&#x2F;div&gt;
+&lt;ol&gt;
+&lt;li&gt;Ciência da Computação&lt;&#x2F;li&gt;
+&lt;li&gt;Redes de Computadores&lt;&#x2F;li&gt;
+&lt;li&gt;Engenharia de Software&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;disciplinas-desejaveis&quot;&gt;Disciplinas desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.&lt;&#x2F;div&gt;
+&lt;ul&gt;
+&lt;li&gt;Sistemas Operacionais&lt;&#x2F;li&gt;
+&lt;li&gt;Sistemas Distribuídos&lt;&#x2F;li&gt;
+&lt;li&gt;Redes de Computadores&lt;&#x2F;li&gt;
+&lt;li&gt;Redes e Sistemas Distribuídos&lt;&#x2F;li&gt;
+&lt;li&gt;Análise de Desempenho de Sistemas&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Estruturas de Dados Persistentes</title>
+        <published>2022-01-01T00:00:00+00:00</published>
+        <updated>2022-04-21T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/projetos/em-andamento/ed-persistentes/" type="text/html"/>
+        <id>https://araruna.science/projetos/em-andamento/ed-persistentes/</id>
+        
+        <content type="html">&lt;h2 id=&quot;nivel-academico-compativel&quot;&gt;Nível acadêmico compatível&lt;&#x2F;h2&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;descricao&quot;&gt;Descrição&lt;&#x2F;h2&gt;
+&lt;p&gt;Estudo de Estruturas de Dados Persistentes (Temporais) para posterior implementação de um visualizador gráfico de estruturas de dados. Esse visualizador deve ser usado como auxiliar no ensino de conteúdos para as disciplinas de ED e EDA, com foco no &lt;em&gt;Campus&lt;&#x2F;em&gt; da UFC em Quixadá.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;atividades&quot;&gt;Atividades&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Investigar literatura da área&lt;&#x2F;li&gt;
+&lt;li&gt;Entender vantagens e desvantagens, além de impactos das decisões tomadas na organização das estruturas&lt;&#x2F;li&gt;
+&lt;li&gt;Investigar organizações alternativas das estruturas básicas&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;escopo&quot;&gt;Escopo&lt;&#x2F;h2&gt;
+&lt;div class=&quot;ui info message&quot;&gt;O escopo definitido está sendo definido.&lt;&#x2F;div&gt;</content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Árvore Split baseada em árvores Rubro-Negras</title>
+        <published>2022-01-01T00:00:00+00:00</published>
+        <updated>2022-04-28T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/projetos/em-andamento/splittree-rubronegra/" type="text/html"/>
+        <id>https://araruna.science/projetos/em-andamento/splittree-rubronegra/</id>
+        
+        <content type="html">&lt;p&gt;Este é um dos projetos em que estou envolvido como parte do meu Doutorado.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;descricao&quot;&gt;Descrição&lt;&#x2F;h2&gt;
+&lt;p&gt;Uma &lt;em&gt;Árvore Split&lt;&#x2F;em&gt; é uma árvore binária de busca que admite uma operação \( \textbf{Split} \) ser realizada em tempo amortizado \( O(1) \). A operação \( \textbf{Split}(T, x) \) reorganiza \( T \) de forma que sua nova raiz seja \( x \), caso \( x \) pertença a \( T \), ou um entre o sucessor e o predecessor de \( x \) em \( T \), caso contrário.&lt;&#x2F;p&gt;
+&lt;p&gt;Este projeto visa propor uma Árvore Split baseada em árvores Rubro-Negras.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Estruturas de Dados e Viajem no Tempo</title>
+        <published>2019-10-10T00:00:00+00:00</published>
+        <updated>2022-04-28T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/palestras/2019-russas-sescomp/" type="text/html"/>
+        <id>https://araruna.science/palestras/2019-russas-sescomp/</id>
+        
+        <content type="html"></content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Obtendo o Número de Grundy de Grades Parciais</title>
+        <published>2019-08-05T00:00:00+00:00</published>
+        <updated>2022-04-21T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/orientacoes/TCC/tcc-ii/2019-bruno-pinho/" type="text/html"/>
+        <id>https://araruna.science/orientacoes/TCC/tcc-ii/2019-bruno-pinho/</id>
+        
+        <content type="html">&lt;h2 id=&quot;dados-da-orientacao&quot;&gt;Dados da Orientação&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;aluno&quot;&gt;Aluno&lt;&#x2F;h3&gt;
+&lt;p&gt;Bruno da Silva Pinho&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;curso&quot;&gt;Curso&lt;&#x2F;h3&gt;
+&lt;p&gt;Sistemas de Informação&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;natureza&quot;&gt;Natureza&lt;&#x2F;h3&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso (Monografia)&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;banca&quot;&gt;Banca&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Prof. Me. Arthur Rodrigues Araruna (Orientador)&lt;&#x2F;li&gt;
+&lt;li&gt;Prof. Me. Anderson Lemos da Silva (Coorientador)&lt;&#x2F;li&gt;
+&lt;li&gt;Prof. Dr. Wladimir Araújo Tavares&lt;&#x2F;li&gt;
+&lt;li&gt;Prof. Dr. Paulo Henrique Macedo de Araújo&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;dados-do-trabalho&quot;&gt;Dados do Trabalho&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;resumo&quot;&gt;Resumo&lt;&#x2F;h3&gt;
+&lt;p&gt;O número de Grundy é maior quantidades de cores que o algoritmo guloso de coloração consegue
+atribuir a um grafo. Para grafos em geral é difícil de se obter esse número. Então neste trabalho
+trabalhamos sobre uma classe de grafos denominada de grades parciais que, são sub grafos
+de grades, e descrevemos uma forma de obter o número de Grundy para essa classe. Neste
+trabalho também mostramos propriedades e estruturas que nos permitem construir uma solução
+algorítmica para esses tipos de grafos. Em especifico apresentamos duas soluções que podem ser
+utilizadas para encontrar o número de Grundy de grades parciais.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;palavras-chave&quot;&gt;Palavras-chave&lt;&#x2F;h3&gt;
+&lt;p&gt;Número de Grundy. Coloração gulosa. Grades parciais.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;apresentacao&quot;&gt;Apresentação&lt;&#x2F;h3&gt;
+&lt;p&gt;Data: 11&#x2F;12&#x2F;2019&lt;&#x2F;p&gt;
+&lt;p&gt;Horário: 18h&lt;&#x2F;p&gt;
+&lt;p&gt;Local: Sala de Videoconferência, Campus de Quixadá&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Obtendo o Número de Grundy de Grades Parciais</title>
+        <published>2019-01-24T00:00:00+00:00</published>
+        <updated>2022-04-21T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/orientacoes/TCC/tcc-i/2019-bruno-pinho/" type="text/html"/>
+        <id>https://araruna.science/orientacoes/TCC/tcc-i/2019-bruno-pinho/</id>
+        
+        <content type="html">&lt;h2 id=&quot;dados-da-orientacao&quot;&gt;Dados da Orientação&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;aluno&quot;&gt;Aluno&lt;&#x2F;h3&gt;
+&lt;p&gt;Bruno da Silva Pinho&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;curso&quot;&gt;Curso&lt;&#x2F;h3&gt;
+&lt;p&gt;Sistemas de Informação&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;natureza&quot;&gt;Natureza&lt;&#x2F;h3&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso (Projeto)&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;banca&quot;&gt;Banca&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Prof. Me. Arthur Rodrigues Araruna (Orientador)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Prof. Me. Anderson Lemos da Silva (Coorientador)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Prof. Dr. Paulo Henrique Macedo de Araújo&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;dados-do-trabalho&quot;&gt;Dados do Trabalho&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;apresentacao&quot;&gt;Apresentação&lt;&#x2F;h3&gt;
+&lt;p&gt;Data: 02&#x2F;07&#x2F;2019&lt;&#x2F;p&gt;
+&lt;p&gt;Horário: 13h30&lt;&#x2F;p&gt;
+&lt;p&gt;Local: Campus de Quixadá&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>SCARLET - Desenvolvimento de uma solução de compressão aplicada a dados textuais estruturados em SVG</title>
+        <published>2016-06-01T00:00:00+00:00</published>
+        <updated>2022-04-21T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/orientacoes/TCC/tcc-ii/2016-anderson-da-silva/" type="text/html"/>
+        <id>https://araruna.science/orientacoes/TCC/tcc-ii/2016-anderson-da-silva/</id>
+        
+        <content type="html">&lt;h2 id=&quot;dados-da-orientacao&quot;&gt;Dados da Orientação&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;aluno&quot;&gt;Aluno&lt;&#x2F;h3&gt;
+&lt;p&gt;Anderson Lemos da Silva&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;curso&quot;&gt;Curso&lt;&#x2F;h3&gt;
+&lt;p&gt;Sistemas de Informação&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;natureza&quot;&gt;Natureza&lt;&#x2F;h3&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso (Monografia)&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;banca&quot;&gt;Banca&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Prof. Me. Arthur Rodrigues Araruna (Orientador)&lt;&#x2F;li&gt;
+&lt;li&gt;Prof. Me. Lucas Ismaily Bezerra Freitas&lt;&#x2F;li&gt;
+&lt;li&gt;Prof. Me. Paulo Henrique Macêdo de Araújo&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;dados-do-trabalho&quot;&gt;Dados do Trabalho&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;resumo&quot;&gt;Resumo&lt;&#x2F;h3&gt;
+&lt;p&gt;Neste trabalho descrevemos uma proposta de uma técnica de compressão de dados especializada
+em dados textuais estruturados em SVG, que chamamos de SCARLET. Mostramos conceitos de
+dados estruturados, compressão de dados e técnicas de compressão especializadas. Além disso,
+fazemos um estudo em um conjunto de arquivos do tipo SVG visando encontrar características
+que puderam ser usadas para melhorar a eficiência da compressão da técnica proposta. Também
+apresentamos um levantamento das técnicas especializadas em XML presentes na literatura,
+e elegemos duas — o XMill e o Gzip — consideradas eficientes na compressão de arquivos
+SVG que foram comparadas com a técnica proposta neste trabalho. No comparativos pudemos
+analisar que nossa técnica se comporta de maneira eficiente, principalmente para arquivos de
+tamanhos pequenos, mas não supera as duas concorrentes, que são mais eficientes na compressão
+de arquivos de tamanhos maiores. Por fim, concluímos que o Gzip é a técnica mais equilibrada
+para esse tipo de arquivo.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;palavras-chave&quot;&gt;Palavras-chave&lt;&#x2F;h3&gt;
+&lt;p&gt;Compressão de dados. Dados textuais estruturados. XML. SVG.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;apresentacao&quot;&gt;Apresentação&lt;&#x2F;h3&gt;
+&lt;p&gt;Data: 15&#x2F;12&#x2F;2016&lt;&#x2F;p&gt;
+&lt;p&gt;Horário: 13h30&lt;&#x2F;p&gt;
+&lt;p&gt;Local: Sala de Seminários, Campus de Quixadá&lt;&#x2F;p&gt;
+&lt;p&gt;…&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Análise comparativa de métodos de compressão aplicados a dados textuais estruturados em SVG</title>
+        <published>2015-01-01T00:00:00+00:00</published>
+        <updated>2022-04-21T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/orientacoes/TCC/tcc-i/2015-anderson-da-silva/" type="text/html"/>
+        <id>https://araruna.science/orientacoes/TCC/tcc-i/2015-anderson-da-silva/</id>
+        
+        <content type="html">&lt;h2 id=&quot;dados-da-orientacao&quot;&gt;Dados da Orientação&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;aluno&quot;&gt;Aluno&lt;&#x2F;h3&gt;
+&lt;p&gt;Anderson Lemos da Silva&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;curso&quot;&gt;Curso&lt;&#x2F;h3&gt;
+&lt;p&gt;Sistemas de Informação&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;natureza&quot;&gt;Natureza&lt;&#x2F;h3&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso (Projeto)&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;banca&quot;&gt;Banca&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Prof. Me. Arthur Rodrigues Araruna (Orientador)&lt;&#x2F;li&gt;
+&lt;li&gt;Prof. Me. Lucas Ismaily Bezerra Freitas&lt;&#x2F;li&gt;
+&lt;li&gt;Prof. Me. Paulo Henrique Macêdo de Araújo&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;dados-do-trabalho&quot;&gt;Dados do Trabalho&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;apresentacao&quot;&gt;Apresentação&lt;&#x2F;h3&gt;
+&lt;p&gt;Data: 19&#x2F;06&#x2F;2015&lt;&#x2F;p&gt;
+&lt;p&gt;Horário: 11h&lt;&#x2F;p&gt;
+&lt;p&gt;Local: Campus de Quixadá&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Caminho Mínimo com Restrição Probabilística de Atraso Máximo</title>
+        <published>2013-08-29T00:00:00+00:00</published>
+        <updated>2013-08-29T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/publicacoes/2013-dissertacao/" type="text/html"/>
+        <id>https://araruna.science/publicacoes/2013-dissertacao/</id>
+        
+        <content type="html">&lt;h2 id=&quot;resumo&quot;&gt;Resumo&lt;&#x2F;h2&gt;
+&lt;p&gt;No problema do &lt;em&gt;Caminho Mínimo com Restrição Probabilística de Atraso Máximo&lt;&#x2F;em&gt; visamos considerar o fator tempo no projeto de rotas de transporte de cargas em malhas viárias a custo mínimo, atentando à crescente incerteza nos tempos de percurso dessas rotas em malhas reais, e observá-lo tendo em mente estratégias de qualidade de serviço, de forma a obtermos um compromisso entre o custo de percurso e a conformidade ao prazo de chegada ao destino. Realizamos um estudo de problemas relacionados na literatura da área de otimização em redes de transporte, de forma a tentarmos conhecer melhor o problema a ser estudado, sobre o qual não tomamos conhecimento de trabalhos existentes. Desenvolvemos um esquema para enumeração de partições do espaço de soluções do problema, que utiliza uma decomposição em L para selecionar partições de forma inteligente, e que é auxiliado por soluções de relaxações do problema de forma a obter cotas para o custo ótimo. Além disso, desenvolvemos algumas estratégias de ramificação e de poda para um esquema de &lt;em&gt;Branch-and-Bound&lt;&#x2F;em&gt;, com uma fase de pré-processamento, de forma a tentar resolver o problema diretamente. Os resultados computacionais obtidos demonstram que somos competitivos com a ferramenta comercial utilizada para comparação em instâncias de menor porte para o problema. Para as demais instâncias, essa ferramenta se mostrou mais eficiente quanto ao tempo necessário para a resolução.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Probabilistic delay constrained shortest-path problem</title>
+        <published>2012-04-01T00:00:00+00:00</published>
+        <updated>2012-04-01T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/publicacoes/2012-roadef/" type="text/html"/>
+        <id>https://araruna.science/publicacoes/2012-roadef/</id>
+        
+        <content type="html"></content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Simulação e Distribuição de Demandas Aleatórias em Grupos de Tráfego com Limites Inferior e Superior de Capacidade</title>
+        <published>2010-09-03T00:00:00+00:00</published>
+        <updated>2010-09-03T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/publicacoes/2010-sbpo/" type="text/html"/>
+        <id>https://araruna.science/publicacoes/2010-sbpo/</id>
+        
+        <content type="html"></content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Otimização de Redes de Telecomunicações de Alta Velocidade com Demanda Aleatória</title>
+        <published>2010-02-28T00:00:00+00:00</published>
+        <updated>2022-04-21T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/projetos/concluidos/2010-2007-redes-telecom/" type="text/html"/>
+        <id>https://araruna.science/projetos/concluidos/2010-2007-redes-telecom/</id>
+        
+        <content type="html">&lt;h2 id=&quot;descricao&quot;&gt;Descrição&lt;&#x2F;h2&gt;
+&lt;p&gt;O objetivo principal do projeto é desenvolver e validar um modelo multi-classe de serviço multi-classe de facilidade para tratar do problema de expansão de redes de telecomunicações de alta velocidade com demanda aleatória. Como objetivos específicos, pretendemos desenvolver um estudo teórico sobre desigualdades válidas para o problema e novas técnicas de resolução baseadas em decomposição inteira de Benders e em algoritmos branch-and-bound (B&amp;amp;B) estocástico.&lt;&#x2F;p&gt;
+&lt;p&gt;Além disso, pretendemos responder questões como:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Vale a pena considerar mais que N (a determinar) tipos diferentes de capacidades modulares em um mesmo modelo matemático?&lt;&#x2F;li&gt;
+&lt;li&gt;Qual a topologia proposta pela solução do modelo matemático (topologia da rede dorsal em anel, em estrela, etc)?&lt;&#x2F;li&gt;
+&lt;li&gt;Qual o horizonte ideal (dois anos, três anos, etc) para prever ou preparar a evolução da rede de forma a minimizar os efeitos da incerteza dos futuros tipos de serviços a serem oferecidos?&lt;&#x2F;li&gt;
+&lt;li&gt;Até quanto de custo de penalidade (por demandas não satisfeitas) a empresa pode se dispor a pagar a seus clientes ou será que ela deve visar a satisfazer todas as demandas (estudo da relação custo de investimento &#x2F; custo de penalidade)?&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;financiadores&quot;&gt;Financiadores&lt;&#x2F;h2&gt;
+&lt;p&gt;Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;dados-do-projeto&quot;&gt;Dados do Projeto&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;situacao&quot;&gt;Situação&lt;&#x2F;h3&gt;
+&lt;p&gt;Concluído&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;integrantes&quot;&gt;Integrantes&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Rafael Castro de Andrade (Coordenador)&lt;&#x2F;li&gt;
+&lt;li&gt;Abdel Lisser&lt;&#x2F;li&gt;
+&lt;li&gt;Nelson Maculan Filho&lt;&#x2F;li&gt;
+&lt;li&gt;Arthur Rodrigues Araruna&lt;&#x2F;li&gt;
+&lt;li&gt;André Gustavo Bastos Gaspar da Silva&lt;&#x2F;li&gt;
+&lt;li&gt;Allberson Bruno de Oliveira Dantas&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;publicacoes&quot;&gt;Publicações&lt;&#x2F;h2&gt;
+&lt;p&gt;…&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

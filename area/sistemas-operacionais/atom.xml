@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt">
+    <title>Prof. Arthur Araruna - Sistemas Operacionais</title>
+    <subtitle>Informações profissionais sobre o Prof. Arthur Araruna do Campus de Quixadá da Universidade Federal do Ceará.</subtitle>
+    <link href="https://araruna.science/area/sistemas-operacionais/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://araruna.science"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-04-28T00:00:00+00:00</updated>
+    <id>https://araruna.science/area/sistemas-operacionais/atom.xml</id>
+    <entry xml:lang="pt">
+        <title>Sistema de arquivos distribuído para redes locais</title>
+        <published>2022-01-01T00:00:00+00:00</published>
+        <updated>2022-04-28T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/projetos/disponiveis/sistema-de-arquivos-distribuido/" type="text/html"/>
+        <id>https://araruna.science/projetos/disponiveis/sistema-de-arquivos-distribuido/</id>
+        
+        <content type="html">&lt;h2 id=&quot;nivel-academico-compativel&quot;&gt;Nível acadêmico compatível&lt;&#x2F;h2&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;descricao&quot;&gt;Descrição&lt;&#x2F;h2&gt;
+&lt;p&gt;A depender da infraestrutura disponível e do tipo de atividade desempenhada por um grupo de profissionais, é interessante fazer uso de todos os recursos de hardware disponíveis de forma a economizar equipamentos ou recursos financeiros. Uma solução no âmbito de armazenamento é distribuir os arquivos de todos os usuários de uma rede local nas próprias máquinas usadas, reservando-se uma parte do espaço de armazenamento dessas máquinas para compor um sistema de arquivos distribuído.&lt;&#x2F;p&gt;
+&lt;p&gt;Este projeto visa propor um sistema de gerenciamento desses dados levando em consideração pontos como confiabilidade, disponibilidade e segurança, de forma a se obter um sistema de aplicabilidade prática.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;possiveis-atividades&quot;&gt;Possíveis Atividades&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Investigar publicações sobre o tema&lt;&#x2F;li&gt;
+&lt;li&gt;Investigar arquiteturas das soluções existentes&lt;&#x2F;li&gt;
+&lt;li&gt;Investigar publicações com comparativos entre soluções&lt;&#x2F;li&gt;
+&lt;li&gt;Desenho de alternativa às soluções existentes&lt;&#x2F;li&gt;
+&lt;li&gt;Implementação de protótipo&lt;&#x2F;li&gt;
+&lt;li&gt;Avaliação empírica da solução proposta&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;escopo&quot;&gt;Escopo&lt;&#x2F;h2&gt;
+&lt;p&gt;{% ui_message(type=“warning”)) %}
+O escopo definitivo do trabalho ainda não está definido.
+{% end %}&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;nao-escopo&quot;&gt;Não-escopo&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;em&gt;Em princípio&lt;&#x2F;em&gt;, não faz parte do escopo deste projeto:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Considerar casos de uso em larga-escala.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;conhecimento&quot;&gt;Conhecimento&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;cursos-desejaveis&quot;&gt;Cursos desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;Os cursos a seguir são os que têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.&lt;&#x2F;div&gt;
+&lt;ol&gt;
+&lt;li&gt;Ciência da Computação&lt;&#x2F;li&gt;
+&lt;li&gt;Redes de Computadores&lt;&#x2F;li&gt;
+&lt;li&gt;Engenharia de Software&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;disciplinas-desejaveis&quot;&gt;Disciplinas desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.&lt;&#x2F;div&gt;
+&lt;ul&gt;
+&lt;li&gt;Sistemas Operacionais&lt;&#x2F;li&gt;
+&lt;li&gt;Sistemas Distribuídos&lt;&#x2F;li&gt;
+&lt;li&gt;Redes de Computadores&lt;&#x2F;li&gt;
+&lt;li&gt;Redes e Sistemas Distribuídos&lt;&#x2F;li&gt;
+&lt;li&gt;Análise de Desempenho de Sistemas&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+</feed>

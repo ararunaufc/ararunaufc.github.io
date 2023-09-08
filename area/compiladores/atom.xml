@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt">
+    <title>Prof. Arthur Araruna - Compiladores</title>
+    <subtitle>Informações profissionais sobre o Prof. Arthur Araruna do Campus de Quixadá da Universidade Federal do Ceará.</subtitle>
+    <link href="https://araruna.science/area/compiladores/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://araruna.science"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-04-23T00:00:00+00:00</updated>
+    <id>https://araruna.science/area/compiladores/atom.xml</id>
+    <entry xml:lang="pt">
+        <title>Edição de código acessível a deficientes visuais</title>
+        <published>2022-01-01T00:00:00+00:00</published>
+        <updated>2022-04-21T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/projetos/disponiveis/edicao-de-codigo-acessivel/" type="text/html"/>
+        <id>https://araruna.science/projetos/disponiveis/edicao-de-codigo-acessivel/</id>
+        
+        <content type="html">&lt;h2 id=&quot;nivel-academico-compativel&quot;&gt;Nível acadêmico compatível&lt;&#x2F;h2&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;descricao&quot;&gt;Descrição&lt;&#x2F;h2&gt;
+&lt;p&gt;Estudar e propor ferramentas para auxiliar a tarefa de leitura e escrita de código por pessoas programadoras portadoras de deficiência visual, com foco em enriquecer a experiência proporcionada por essas ferramentas.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;possiveis-atividades&quot;&gt;Possíveis Atividades&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Entrevistar pessoas programadoras portadoras de deficiência visual em sua atuação profissional&lt;&#x2F;li&gt;
+&lt;li&gt;Investigar ferramentas disponíveis&lt;&#x2F;li&gt;
+&lt;li&gt;Desenvolver ou adaptar ferramenta para melhor auxiliar a atividade de escrita e leitura de código&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;escopo&quot;&gt;Escopo&lt;&#x2F;h2&gt;
+&lt;p&gt;{% ui_message(type=“warning”)) %}
+O escopo definitivo do trabalho ainda não está definido.
+{% end %}&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Propor ferramentas e funcionalidades para reduzir dificuldades na atuação profissional dessa população&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;conhecimento&quot;&gt;Conhecimento&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;cursos-desejaveis&quot;&gt;Cursos desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;Os cursos a seguir são os que têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.&lt;&#x2F;div&gt;
+&lt;ol&gt;
+&lt;li&gt;Engenharia de Software&lt;&#x2F;li&gt;
+&lt;li&gt;Ciência da Computação&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;disciplinas-desejaveis&quot;&gt;Disciplinas desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.&lt;&#x2F;div&gt;
+&lt;ul&gt;
+&lt;li&gt;Estrutura de Dados Avançada&lt;&#x2F;li&gt;
+&lt;li&gt;Compiladores&lt;&#x2F;li&gt;
+&lt;li&gt;Interação Humano-Computador&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Algoritmos de detecção de escape de variáveis</title>
+        <published>2022-01-01T00:00:00+00:00</published>
+        <updated>2022-04-23T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://araruna.science/projetos/disponiveis/escape-de-variaveis/" type="text/html"/>
+        <id>https://araruna.science/projetos/disponiveis/escape-de-variaveis/</id>
+        
+        <content type="html">&lt;h2 id=&quot;nivel-academico-compativel&quot;&gt;Nível acadêmico compatível&lt;&#x2F;h2&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;descricao&quot;&gt;Descrição&lt;&#x2F;h2&gt;
+&lt;p&gt;Para linguagens que gerenciam memória de maneira automática, geralmente uma das tarefas do compilador, na intenção de otimizar o uso de memória, é decidir se os dados referenciados por uma variável devem residir no heap ou na pilha de execução. Para isso, é necessário detectar se, por assim dizer, aqueles dados podem ou não ser compartilhados entre funções com tempo de vida distintos, o que chamamos de &amp;quot;Análise de escape&amp;quot;.&lt;&#x2F;p&gt;
+&lt;p&gt;Este projeto visa estudar e avaliar as soluções já propostas para esse fim.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;possiveis-atividades&quot;&gt;Possíveis Atividades&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Investigar publicações sobre o tema&lt;&#x2F;li&gt;
+&lt;li&gt;Investigar publicações com comparativos entre soluções&lt;&#x2F;li&gt;
+&lt;li&gt;Implementação e validação ou comparação de soluções&lt;&#x2F;li&gt;
+&lt;li&gt;Identificar fatores determinantes dos algoritmos ou das semânticas de linguagem para a eficiência das soluções&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;escopo&quot;&gt;Escopo&lt;&#x2F;h2&gt;
+&lt;p&gt;{% ui_message(type=“warning”)) %}
+O escopo definitivo do trabalho ainda não está definido.
+{% end %}&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;conhecimento&quot;&gt;Conhecimento&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;cursos-desejaveis&quot;&gt;Cursos desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;Os cursos a seguir são os que têm perfil mais próximo ao necessário para o projeto. Isso não significa que os demais cursos sejam indesejados.&lt;&#x2F;div&gt;
+&lt;ol&gt;
+&lt;li&gt;Ciência da Computação&lt;&#x2F;li&gt;
+&lt;li&gt;Engenharia de Software&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h3 id=&quot;disciplinas-desejaveis&quot;&gt;Disciplinas desejáveis&lt;&#x2F;h3&gt;
+&lt;div class=&quot;ui info message&quot;&gt;As disciplinas a seguir tratam de conteúdos que serão úteis no desenvolvimento do projeto. Entretanto, é possível desenvolver o estudo a partir das noções básicas desses conteúdos, apesar de isso tornar o processo mais lento.&lt;&#x2F;div&gt;
+&lt;ul&gt;
+&lt;li&gt;Estrutura de Dados Avançada&lt;&#x2F;li&gt;
+&lt;li&gt;Projeto e Análise de Algoritmos&lt;&#x2F;li&gt;
+&lt;li&gt;Compiladores&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+</feed>
