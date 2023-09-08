@@ -13,8 +13,8 @@ id = "ensino"
   title = "QXD0010 - Estrutura de Dados"
   entries = [
   "2019.2 (T01A)",
-  "2020.1 (T02A)"
-  "2023.2 (T04)"
+  "2020.1 (T02A)",
+  "2023.2 (T04)",
 ]
 
   [[extra.categories.children]]

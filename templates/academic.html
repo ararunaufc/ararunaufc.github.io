@@ -4,6 +4,11 @@
 {{ macros_nav::top_nav(website_title=config.title, extra_items=config.extra.menu_items, active_item=section.title) }}
 {% endblock nav %}
 
+{% block styles %}
+  <link rel="stylesheet" href="/css/columns.css" />
+  {{ super() }}
+{% endblock %}
+
 {% block page_content %}
 
 <section>
@@ -20,7 +25,7 @@
     </nav>
 
     {% for category in section.extra.categories -%}
-    <article class="ui bottom attached fluid padded tab segment" data-tab="{{ category.id }}">
+    <article class="ui bottom attached fluid padded tab segment two-columns" data-tab="{{ category.id }}">
       {% if category.entries -%}
       <ul>
         {% for entry in category.entries -%}
