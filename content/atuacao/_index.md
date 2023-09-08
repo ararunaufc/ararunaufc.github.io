@@ -14,6 +14,7 @@ id = "ensino"
   entries = [
   "2019.2 (T01A)",
   "2020.1 (T02A)"
+  "2023.2 (T04)"
 ]
 
   [[extra.categories.children]]
@@ -28,6 +29,7 @@ id = "ensino"
   '2019.1 (T06)',
   "2019.2 (T04)",
   "2021.2 (T01, T02)",
+  "2023.2 (T05)",
 ]
 
   [[extra.categories.children]]
