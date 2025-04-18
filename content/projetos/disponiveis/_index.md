@@ -4,8 +4,6 @@ template = "projects.html"
 page_template = "project-page.html"
 weight = 20
 
-feed = true
-
 draft = true
 +++
 
