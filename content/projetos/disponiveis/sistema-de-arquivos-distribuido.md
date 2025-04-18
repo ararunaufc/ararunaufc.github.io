@@ -36,7 +36,7 @@ Este projeto visa propor um sistema de gerenciamento desses dados levando em con
 
 ## Escopo
 
-{% ui_message(type="warning")) %}
+{% ui_message(type="warning") %}
 O escopo definitivo do trabalho ainda não está definido.
 {% end %}
 

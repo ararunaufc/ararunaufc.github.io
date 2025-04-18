@@ -32,7 +32,7 @@ Estudar e propor ferramentas para auxiliar a tarefa de leitura e escrita de cód
 
 ## Escopo
 
-{% ui_message(type="warning")) %}
+{% ui_message(type="warning") %}
 O escopo definitivo do trabalho ainda não está definido.
 {% end %}
 

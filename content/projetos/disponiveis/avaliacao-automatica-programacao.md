@@ -34,7 +34,7 @@ Este projeto visa estudar e avaliar as soluções já propostas para esse fim.
 
 ## Escopo
 
-{% ui_message(type="warning")) %}
+{% ui_message(type="warning") %}
 O escopo definitivo do trabalho ainda não está definido.
 {% end %}
 
