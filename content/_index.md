@@ -1,6 +1,4 @@
 +++
-updated = 2022-04-24
-
 [extra]
 title = "Professor e Pesquisador na UFC Quixadá"
 interests = [

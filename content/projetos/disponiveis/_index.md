@@ -3,7 +3,6 @@ title = "Projetos Disponíveis"
 template = "projects.html"
 page_template = "project-page.html"
 weight = 20
-updated = 2023-09-06
 
 feed = true
 +++

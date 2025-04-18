@@ -2,8 +2,6 @@
 title = "Projetos"
 template = "section-summary.html"
 page_template = "project-page.html"
-sort_by = "title"
-updated = 2022-04-24
 weight = 10
 
 [extra]
