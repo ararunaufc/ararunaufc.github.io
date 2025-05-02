@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt">
+    <title>Prof. Arthur Araruna - Estruturas de Dados</title>
+    <subtitle>Informações profissionais sobre o Prof. Arthur Araruna do Campus de Quixadá da Universidade Federal do Ceará.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://araruna.prof/area/estruturas-de-dados/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://araruna.prof"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-04-28T00:00:00+00:00</updated>
+    <id>https://araruna.prof/area/estruturas-de-dados/atom.xml</id>
+    <entry xml:lang="pt">
+        <title>Estruturas de Dados Persistentes</title>
+        <published>2022-01-01T00:00:00+00:00</published>
+        <updated>2022-04-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://araruna.prof/projetos/em-andamento/ed-persistentes/"/>
+        <id>https://araruna.prof/projetos/em-andamento/ed-persistentes/</id>
+        
+        <content type="html" xml:base="https://araruna.prof/projetos/em-andamento/ed-persistentes/">&lt;h2 id=&quot;nivel-academico-compativel&quot;&gt;Nível acadêmico compatível&lt;&#x2F;h2&gt;
+&lt;p&gt;Trabalho de Conclusão de Curso&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;descricao&quot;&gt;Descrição&lt;&#x2F;h2&gt;
+&lt;p&gt;Estudo de Estruturas de Dados Persistentes (Temporais) para posterior implementação de um visualizador gráfico de estruturas de dados. Esse visualizador deve ser usado como auxiliar no ensino de conteúdos para as disciplinas de ED e EDA, com foco no &lt;em&gt;Campus&lt;&#x2F;em&gt; da UFC em Quixadá.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;atividades&quot;&gt;Atividades&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Investigar literatura da área&lt;&#x2F;li&gt;
+&lt;li&gt;Entender vantagens e desvantagens, além de impactos das decisões tomadas na organização das estruturas&lt;&#x2F;li&gt;
+&lt;li&gt;Investigar organizações alternativas das estruturas básicas&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;escopo&quot;&gt;Escopo&lt;&#x2F;h2&gt;
+&lt;div class=&quot;ui info message&quot;&gt;O escopo definitido está sendo definido.&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="pt">
+        <title>Árvore Split baseada em árvores Rubro-Negras</title>
+        <published>2022-01-01T00:00:00+00:00</published>
+        <updated>2022-04-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://araruna.prof/projetos/em-andamento/splittree-rubronegra/"/>
+        <id>https://araruna.prof/projetos/em-andamento/splittree-rubronegra/</id>
+        
+        <content type="html" xml:base="https://araruna.prof/projetos/em-andamento/splittree-rubronegra/">&lt;p&gt;Este é um dos projetos em que estou envolvido como parte do meu Doutorado.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;descricao&quot;&gt;Descrição&lt;&#x2F;h2&gt;
+&lt;p&gt;Uma &lt;em&gt;Árvore Split&lt;&#x2F;em&gt; é uma árvore binária de busca que admite uma operação \( \textbf{Split} \) ser realizada em tempo amortizado \( O(1) \). A operação \( \textbf{Split}(T, x) \) reorganiza \( T \) de forma que sua nova raiz seja \( x \), caso \( x \) pertença a \( T \), ou um entre o sucessor e o predecessor de \( x \) em \( T \), caso contrário.&lt;&#x2F;p&gt;
+&lt;p&gt;Este projeto visa propor uma Árvore Split baseada em árvores Rubro-Negras.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
