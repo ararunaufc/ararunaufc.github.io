@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% import 'macros/head.html' as macros_head %}
+
+{% set parent_section = get_section(path=page.ancestors | last, metadata_only=true) -%}
+{% set top_section = get_section(path=page.ancestors[1], metadata_only=true) %}
+
+{% block styles %}
+{{ super() }}
+<style>
+  aside+section {
+    margin-top: 1em;
+  }
+
+  .extra-top {
+    margin-top: 2em;
+  }
+
+  article>header {
+    margin-bottom: 3em;
+  }
+
+  article>footer {
+    margin-top: 3em;
+  }
+</style>
+{% endblock styles %}
+
+{% block title -%}
+<title>{{ page.title }} | {% if parent_section -%}{{ parent_section.title }} | {% endif %} {{- config.title }}</title>
+{% endblock title -%}
+
+{% block nav %}
+{{ macros_nav::top_nav(website_title=config.title, extra_items=config.extra.menu_items, active_item=top_section.title |
+default(value="")) }}
+{% endblock nav %}
+
+{% block page_content %}
+{#
+<!-- <div class="container max-w-3xl mx-auto px-4">
+  <div class="pt-8 flex flex">
+    <h1 class="grow font-bold font-sans break-normal text-gray-900 text-3xl">{{ page.title }}</h1>
+    {% if page.extra.start_date and page.extra.end_date -%}
+    <p class="text-sm md:text-base font-normal text-gray-600 py-2">Período: {{ page.extra.start_date |
+      date(format="%m/%Y") }} a {{ page.extra.end_date | date(format="%m/%Y") }}</p>
+    {%- endif %}
+  </div>
+  <hr class="border-b-1 border-gray-400 mb-8">
+  {% if page.extra.tldr %}
+  <p class="pb-4 text-gray-600"> <span class="font-bold">TLDR.</span> {{ page.extra.tldr | safe }} </p>
+  {% endif %}
+  <article class="prose prose-indigo prose max-w-3xl">
+{{ page.content | safe }}
+</article>
+</div> -->
+#}
+<article>
+  <header>
+    <h2>{{ page.title }}</h2>
+    <div>Publicado em: {{ page.date | date }}.</div>
+    {% if page.updated %}
+    <div>Atualizado em: {{ page.updated | date }}.</div>
+    {% endif %}
+  </header>
+  <main>
+    {{ page.content | safe }}
+  </main>
+  <footer>
+    <ul class="ui tag labels">
+      {% for tag in page.taxonomies.tags %}
+      <li class="ui label">{{ tag }}</li>
+      {% endfor %}
+    </ul>
+  </footer>
+</article>
+{% endblock page_content %}

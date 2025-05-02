@@ -1,0 +1,101 @@
+{% extends "titled_page.html" %}
+
+{% block nav %}
+{{ macros_nav::top_nav(website_title=config.title, extra_items=config.extra.menu_items, active_item=section.title) }}
+{% endblock nav %}
+
+{% block page_content %}
+<section class="ui basic segment">
+  <ul class="ui relaxed list items">
+    {% for page in section.pages %}
+    <li class="item">
+      <div class="content">
+        <a href="{{ page.permalink }}" class="header">{{ page.title }}{% if page.draft %} <div
+            class="ui left pointing horizontal yellow label">Rascunho</div>{% endif %}</a>
+        <div class="meta">
+          <span>Publicado em: {{ page.date | date }}.</span>
+          {% if page.updated %}
+          <span>Atualizado em: {{ page.updated | date }}.</span>
+          {% endif %}
+        </div>
+        <p class="description">{{ page.description }}</p>
+        <div class="meta">
+          {% for tag in page.taxonomies.tags %}
+          <span class="ui tag label">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock page_content %}
+{#<!-- <div class="container max-w-3xl mx-auto px-4">
+  <div class="font-sans py-8">
+    <h1 class="font-bold font-sans break-normal text-gray-900 pb-2 text-3xl md:text-4xl">{{ section.title }}</h1>
+  </div>
+
+  <article class="prose prose-indigo prose max-w-3xl">
+    {{ section.content | safe }}
+  </article>
+
+  <div class="prose py-4">
+    <h2 class="">Pesquisa</h2>
+  </div>
+
+  <ul>
+    {%- for page in section.pages | filter(attribute="extra.type", value="Research") %}
+    <li class="pb-3">
+      {{ publication::publication_summary(page=page) }}
+    </li>
+    {%- else %}
+    <li class="pb-3 text-gray-500">Nenhum projeto nesta seção no momento.</li>
+    {%- endfor %}
+  </ul>
+
+  <div class="prose py-4">
+    <h2 class=""> Ferramentas e Processos </h2>
+  </div>
+
+  <ul>
+    {%- for page in section.pages %}
+    {%- if page.extra.type == "Tool" or page.extra.type == "Process" %}
+    <li class="pb-3">
+      {{ publication::publication_summary(page=page) }}
+    </li>
+    {%- endif %}
+    {%- endfor %}
+
+    {# Necessário pois não descobri como filtrar por uma condição complexa. Além de ser difícil fazer o teste de outra
+    forma... #}
+    {% set entries = section.pages | filter(attribute="extra.type", value="Tool") | length %}
+    {% set entries = section.pages | filter(attribute="extra.type", value="Process") | length + entries %}
+    {%- if entries == 0 %}
+    <li class="pb-3 text-gray-500">Nenhum projeto nesta seção no momento.</li>
+    {%- endif %}
+  </ul>
+
+  <div class="prose py-4">
+    <h2 class=""> Ensino e Extensão </h2>
+  </div>
+
+  <ul>
+    {% for page in section.pages %}
+    {% if page.extra.type == "Education" or page.extra.type == "Social" %}
+    <li class="pb-3">
+      {{ publication::publication_summary(page=page) }}
+    </li>
+    {%- endif %}
+    {%- endfor %}
+
+    {# Necessário pois não descobri como filtrar por uma condição complexa. Além de ser difícil fazer o teste de outra
+    forma... #}
+    {% set entries = section.pages | filter(attribute="extra.type", value="Tool") | length %}
+    {% set entries = section.pages | filter(attribute="extra.type", value="Process") | length + entries %}
+    {%- if entries == 0 %}
+    <li class="pb-3 text-gray-500">Nenhum projeto nesta seção no momento.</li>
+    {%- endif %}
+  </ul>
+
+</div> -->
+#}

@@ -17,6 +17,8 @@ taxonomies = [
     { name = "academic_level", feed = true },
     { name = "artifact", feed = true },
     { name = "grant_agency", feed = false },
+    { name = "tags", feed = true },
+    { name = "categories", feed = true }
 ]
 
 [markdown]
